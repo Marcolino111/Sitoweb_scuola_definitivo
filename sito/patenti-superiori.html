@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Patenti Superiori C, CE, D, DE | Autoscuola DS - Aldo Di Stadio Ciampino</title>
+<!-- Google Fonts: Plus Jakarta Sans & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with custom theme -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary-container": "#ef9900",
+            "outline-variant": "#c5c5d3",
+            "surface-variant": "#dae2fd",
+            "error": "#ba1a1a",
+            "amber-highlight": "#F59E0B",
+            "surface-tint": "#4059aa",
+            "slate-surface": "#F8FAFC",
+            "on-tertiary-fixed-variant": "#653e00",
+            "primary-fixed-dim": "#b6c4ff",
+            "inverse-surface": "#283044",
+            "inverse-primary": "#b6c4ff",
+            "on-tertiary": "#ffffff",
+            "tertiary": "#3e2400",
+            "amber-subtle": "#FEF3C7",
+            "brand-navy-dark": "#0F172A",
+            "secondary-container": "#5bb8fe",
+            "on-error-container": "#93000a",
+            "brand-navy-surface": "#1E293B",
+            "error-container": "#ffdad6",
+            "primary-fixed": "#dce1ff",
+            "on-primary": "#ffffff",
+            "secondary": "#006398",
+            "on-surface-variant": "#444651",
+            "on-error": "#ffffff",
+            "on-primary-fixed": "#00164e",
+            "background": "#faf8ff",
+            "surface-border": "#E2E8F0",
+            "surface-border-strong": "#CBD5E1",
+            "secondary-fixed-dim": "#93ccff",
+            "success-green": "#10B981",
+            "primary-container": "#1e3a8a",
+            "on-tertiary-fixed": "#2a1700",
+            "on-secondary-container": "#00476e",
+            "surface-container-low": "#f2f3ff",
+            "secondary-fixed": "#cce5ff",
+            "on-surface": "#131b2e",
+            "surface-container-highest": "#dae2fd",
+            "tertiary-fixed": "#ffddb8",
+            "surface": "#faf8ff",
+            "tertiary-fixed-dim": "#ffb95f",
+            "primary": "#00236f",
+            "outline": "#757682",
+            "surface-container-lowest": "#ffffff",
+            "inverse-on-surface": "#eef0ff",
+            "surface-dim": "#d2d9f4",
+            "critical-surface": "#FEE2E2",
+            "on-primary-fixed-variant": "#264191",
+            "electric-blue": "#2563EB",
+            "surface-container-high": "#e2e7ff",
+            "on-secondary-fixed-variant": "#004b73",
+            "tertiary-container": "#5c3800",
+            "on-secondary-fixed": "#001d31",
+            "on-primary-container": "#90a8ff",
+            "on-background": "#131b2e",
+            "surface-bright": "#faf8ff",
+            "critical-red": "#EF4444",
+            "surface-container": "#eaedff",
+            "on-secondary": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-3xl": "6rem",
+            "gutter-mobile": "1rem",
+            "gutter": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "margin": "1.5rem",
+            "space-lg": "1.5rem",
+            "margin-mobile": "1rem",
+            "space-2xl": "4rem",
+            "space-md": "1rem"
+          },
+          "fontFamily": {
+            "display-hero": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Inter"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Inter"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "label-caps": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Inter"]
+          },
+          "fontSize": {
+            "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "800" }],
+            "display-hero-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-surface text-on-surface antialiased selection:bg-primary selection:text-white">
+<!-- TOP APP BAR (Shared Components Tokenized Implementation) -->
+<header class="sticky top-0 z-50 h-[72px] bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-border shadow-sm">
+<div class="max-w-[1240px] mx-auto px-6 flex items-center justify-between h-full">
+<!-- Brand Anchor -->
+<a class="flex items-center gap-3 group" href="index.html">
+<div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-white font-headline-md text-headline-md font-bold tracking-tight shadow-sm">
+          DS
+        </div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold tracking-tight text-brand-navy-dark leading-none">
+            AUTOSCUOLA DS
+          </span>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider mt-0.5">
+            di Aldo Di Stadio • Ciampino
+          </span>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-7">
+<a class="text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1 font-label-md text-label-md" href="corsi.html">
+          Corsi
+        </a>
+<a class="text-brand-navy-dark font-semibold border-b-2 border-electric-blue pb-1 font-label-md text-label-md" href="patenti-superiori.html">
+          Patenti Superiori
+        </a>
+<a class="text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1 font-label-md text-label-md" href="cqc.html">
+          CQC Professionale
+        </a>
+<a class="text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1 font-label-md text-label-md" href="recupero-punti.html">
+          Recupero Punti
+        </a>
+<a class="text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1 font-label-md text-label-md" href="blog.html">
+          Blog
+        </a>
+<a class="text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1 font-label-md text-label-md" href="contatti.html">
+          Contatti
+        </a>
+</nav>
+<!-- Trailing Action Cluster -->
+<div class="flex items-center gap-3">
+<a class="hidden lg:flex items-center gap-2 px-3.5 py-2 text-brand-navy-dark font-label-md text-label-md rounded-lg border border-surface-border-strong hover:bg-slate-surface transition-all active:scale-[0.98]" href="tel:067960806">
+<span class="material-symbols-outlined text-[18px] text-primary" data-icon="call">call</span>
+<span>Chiama Ora</span>
+</a>
+<a class="flex items-center gap-2 px-5 py-2.5 bg-primary-container hover:bg-brand-navy-dark text-white font-label-md text-label-md rounded-lg shadow-sm hover:shadow transition-all duration-150 active:scale-[0.98]" href="#richiesta">
+<span>Iscriviti Online</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<!-- HERO SECTION -->
+<section class="relative bg-surface-container-lowest border-b border-surface-border overflow-hidden">
+<div class="max-w-[1240px] mx-auto px-6 py-16 md:py-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Copy Column (7 cols) -->
+<div class="lg:col-span-7 flex flex-col items-start">
+<!-- Pillar Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-subtle text-amber-900 border border-amber-200 mb-6 shadow-xs">
+<span class="w-2 h-2 rounded-full bg-amber-highlight animate-pulse"></span>
+<span class="font-label-caps text-label-caps tracking-wider uppercase">
+            FORMAZIONE PROFESSIONALE AUTOTRASPORTO
+          </span>
+</div>
+<h1 class="font-display-hero text-display-hero text-brand-navy-dark mb-6">
+          Patenti Superiori <span class="text-primary-container">C, D, CE, DE</span> per Autisti Professionisti.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-2xl leading-relaxed">
+          Percorsi d'eccellenza per il mondo del lavoro, la logistica su gomma e il trasporto persone a Roma e Castelli Romani. Mezzi di proprietà conformi agli standard ministeriali e simulatori didattici d'esame.
+        </p>
+<!-- CTA Trigger Row -->
+<div class="flex flex-wrap items-center gap-4 mb-10 w-full sm:w-auto">
+<a class="h-11 px-6 rounded-lg bg-amber-highlight hover:bg-amber-600 text-brand-navy-dark font-label-md text-label-md font-bold flex items-center justify-center gap-2 shadow-sm transition-all duration-150 active:scale-[0.98]" href="#richiesta">
+<span class="material-symbols-outlined text-[18px]" data-icon="description">description</span>
+<span>Richiedi Piano di Studi</span>
+</a>
+<a class="h-11 px-6 rounded-lg border border-surface-border-strong hover:border-outline text-brand-navy-dark bg-surface-container-lowest hover:bg-slate-surface font-label-md text-label-md flex items-center justify-center gap-2 transition-all duration-150 active:scale-[0.98]" href="corsi.html">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant" data-icon="download">download</span>
+<span>Scarica Brochure Corsi</span>
+</a>
+</div>
+<!-- Key Certifications Ribbons -->
+<div class="grid grid-cols-3 gap-6 pt-6 border-t border-surface-border w-full">
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold text-brand-navy-dark">100%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Flotta proprietaria su pista</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold text-brand-navy-dark">98.4%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Promossi al primo esame</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold text-brand-navy-dark">+45</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Aziende convenzionate</span>
+</div>
+</div>
+</div>
+<!-- Right Visual Column (5 cols) -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-xl overflow-hidden border border-surface-border shadow-lg bg-slate-surface">
+<img class="w-full h-[440px] object-cover" data-alt="A modern commercial heavy vehicle training fleet featuring a pristine Volvo heavy transport truck and a sleek Mercedes-Benz long-distance passenger coach parked on a professional driving school test track. High key cinematic daylight illuminates the crisp metallic surfaces under an overcast azure sky with high precision automotive styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvWsMTZUyKpT4-b0OKtkI5Gb9tNCmNJJUiRie97iryP7aoXRvv62qn_9HVDIDE7QU2qYD7_58oAfqua0GN4nuSfT8w63lttJNG7JjNQSK1CLJESUX2uzIRdZi2aLHHIc3NrKfQMerJCnvH4_o1WNDEitVqpGNOpoJXu_IwnTFq7bTuaxl2K_kURxxs-Pj2vSW2VSUQZSQyS9UXZgDk1FJAi6bZdV8odEUIAWI6XASoy3AzzUUvCt4cIQ"/>
+<!-- Overlaid Spec Badge -->
+<div class="absolute bottom-4 left-4 right-4 p-4 bg-brand-navy-dark/95 backdrop-blur-md rounded-lg border border-brand-navy-surface text-white">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-caps text-label-caps text-amber-highlight uppercase">Parco Veicoli d'Esame</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-primary-container text-white">Omologazione 2024</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline-variant">
+              Trattori stradali Iveco Stralis e Mercedes Actros con cambio automatizzato e analogico + Pullman Gran Turismo Setra 415 HD.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CATEGORIE PATENTI SUPERIORI (Engineered Bento Grid Layout) -->
+<section class="py-20 bg-slate-surface" id="patenti">
+<div class="max-w-[1240px] mx-auto px-6">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-14">
+<div>
+<span class="font-label-caps text-label-caps text-electric-blue uppercase tracking-wider block mb-2">
+            Percorsi Formativi Abilitativi
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-brand-navy-dark">
+            Schede Categorie Patenti Superiori
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-4 md:mt-0">
+          Dai trasporti merceologici ai collegamenti di linea e turistici. Programmi conformi al Codice della Strada e direttive UE.
+        </p>
+</div>
+<!-- Bento Grid (8 Col + 4 Col structure) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<!-- Card 1: Patente C & C1 (Featured 8 Cols) -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl border border-surface-border p-8 hover:border-surface-border-strong hover:shadow-md transition-all duration-200">
+<div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+<div class="flex items-center gap-3">
+<span class="px-3.5 py-1 rounded-full bg-blue-50 text-electric-blue font-label-caps text-label-caps uppercase border border-blue-200">
+                Trasporto Merci
+              </span>
+<span class="px-2.5 py-0.5 rounded-full bg-amber-subtle text-amber-900 font-label-caps text-[11px] font-bold">
+                Più Richiesto
+              </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Requisito: Patente B (21 anni / 18 con CQC)</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-brand-navy-dark mb-3">
+            Patente C e C1 — Autocarri Pesanti e Motrici
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+            Abilita alla guida di autoveicoli destinati al trasporto di cose con massa limite a pieno carico superiore a 3.500 kg, anche trainanti un rimorchio leggero fino a 750 kg. Ideale per logistica su scala regionale e cantieristica pesante.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4 border-t border-b border-surface-border mb-6">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5" data-icon="check_circle">check_circle</span>
+<span class="font-body-sm text-body-sm text-brand-navy-dark">Motrici da cantiere e distribuzione urbana/extraurbana</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5" data-icon="check_circle">check_circle</span>
+<span class="font-body-sm text-body-sm text-brand-navy-dark">Sessioni pratiche su autocarro di proprietà DS</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5" data-icon="check_circle">check_circle</span>
+<span class="font-body-sm text-body-sm text-brand-navy-dark">Studio dinamica del mezzo, limiti di carico e frenata</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5" data-icon="check_circle">check_circle</span>
+<span class="font-body-sm text-body-sm text-brand-navy-dark">Accesso immediato ai moduli CQC Merci</span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px]" data-icon="calendar_month">calendar_month</span>
+<span>Prossima sessione teorica: <strong>Lunedì 14 Aprile</strong></span>
+</div>
+<a class="text-primary hover:text-brand-navy-dark font-label-md text-label-md font-semibold inline-flex items-center gap-1 group" href="#richiesta">
+<span>Configura Corso</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 2: Patente CE (4 Cols) -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl border border-surface-border p-8 hover:border-surface-border-strong hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="px-3.5 py-1 rounded-full bg-blue-50 text-electric-blue font-label-caps text-label-caps uppercase border border-blue-200">
+                Logistica Internazionale
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Richiede: Pat. C</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-brand-navy-dark mb-3">
+              Patente CE — Autoarticolati e Autotreni
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Estensione per la guida di complessi veicolari costituiti da motrice di categoria C e rimorchio o semirimorchio con massa superiore a 750 kg.
+            </p>
+<ul class="space-y-3 mb-6">
+<li class="flex items-center gap-2 text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-success-green text-[18px]" data-icon="done">done</span>
+<span>Manovre di aggancio/sgancio rapido</span>
+</li>
+<li class="flex items-center gap-2 text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-success-green text-[18px]" data-icon="done">done</span>
+<span>Retromarcia in banchina e accosto</span>
+</li>
+<li class="flex items-center gap-2 text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-success-green text-[18px]" data-icon="done">done</span>
+<span>Autostrade e tratte intermodali</span>
+</li>
+</ul>
+</div>
+<a class="w-full py-2.5 rounded-lg border border-surface-border-strong hover:bg-slate-surface text-center font-label-md text-label-md text-brand-navy-dark transition-colors" href="#richiesta">
+            Dettagli Esame CE
+          </a>
+</div>
+<!-- Card 3: Patente D e D1 (Featured 4 Cols) -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl border border-surface-border p-8 hover:border-surface-border-strong hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-800 font-label-caps text-label-caps uppercase border border-emerald-200">
+                Trasporto Persone
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">24 anni / 21 con CQC</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-brand-navy-dark mb-3">
+              Patente D e D1 — Autobus e Pullman GT
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Abilita alla guida di autoveicoli destinati al trasporto di persone con più di 8 posti oltre al conducente (trasporto pubblico urbano, scuolabus, turismo a lungo raggio).
+            </p>
+<ul class="space-y-3 mb-6">
+<li class="flex items-center gap-2 text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-success-green text-[18px]" data-icon="done">done</span>
+<span>Sicurezza passeggeri ed evacuazione</span>
+</li>
+<li class="flex items-center gap-2 text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-success-green text-[18px]" data-icon="done">done</span>
+<span>Guida confortevole e anticipativa</span>
+</li>
+<li class="flex items-center gap-2 text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-success-green text-[18px]" data-icon="done">done</span>
+<span>Preparazione concorsi TPL (Cotral, Atac)</span>
+</li>
+</ul>
+</div>
+<a class="w-full py-2.5 rounded-lg border border-surface-border-strong hover:bg-slate-surface text-center font-label-md text-label-md text-brand-navy-dark transition-colors" href="#richiesta">
+            Dettagli Esame D
+          </a>
+</div>
+<!-- Card 4: Patente DE (8 Cols) -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl border border-surface-border p-8 hover:border-surface-border-strong hover:shadow-md transition-all duration-200">
+<div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+<span class="px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-800 font-label-caps text-label-caps uppercase border border-emerald-200">
+              Autosnodati Speciali
+            </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Requisito: Patente D attiva</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-brand-navy-dark mb-3">
+            Patente DE — Autosnodati, Bus Turistici con Carrello e Rimorchi Pesanti
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+            Consente la guida di autobus di categoria D con rimorchio avente massa complessiva superiore a 750 kg, compresi autosnodati impiegati nelle direttrici ad alta densità e vetture turistiche allestite con carrelli per attrezzature sportive o bagagli voluminosi.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4 border-t border-b border-surface-border mb-6">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5" data-icon="check_circle">check_circle</span>
+<span class="font-body-sm text-body-sm text-brand-navy-dark">Controllo del rimorchio in curva e sbalzo posteriore</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5" data-icon="check_circle">check_circle</span>
+<span class="font-body-sm text-body-sm text-brand-navy-dark">Impianti di frenatura pneumatica continua e automatica</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5" data-icon="check_circle">check_circle</span>
+<span class="font-body-sm text-body-sm text-brand-navy-dark">Gestione dell'aerodinamica laterale e stabilità</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5" data-icon="check_circle">check_circle</span>
+<span class="font-body-sm text-body-sm text-brand-navy-dark">Omologazioni turistiche internazionali</span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="text-on-surface-variant font-body-sm text-body-sm">
+              Sessioni pratiche personalizzate su circuito dedicato.
+            </div>
+<a class="text-primary hover:text-brand-navy-dark font-label-md text-label-md font-semibold inline-flex items-center gap-1 group" href="#richiesta">
+<span>Richiedi Info Patente DE</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- DIDATTICA SPECIALISTICA & CRONOTACHIGRAFO (Dark High-Trust Module) -->
+<section class="py-20 bg-brand-navy-dark text-white relative overflow-hidden" id="didattica">
+<!-- Subtle architectural grid accents -->
+<div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="max-w-[1240px] mx-auto px-6 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+<div class="lg:col-span-7">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-navy-surface border border-slate-700 text-sky-400 font-label-caps text-label-caps uppercase mb-4">
+<span class="material-symbols-outlined text-[16px]" data-icon="speed">speed</span>
+<span>Tecnologia &amp; Conformità Ministeriale</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-white mb-6">
+            Didattica Specialistica e Cronotachigrafo Intelligente 4.0
+          </h2>
+<p class="font-body-lg text-body-lg text-outline-variant leading-relaxed">
+            Presso la nostra sede di Ciampino non impari solo a superare l'esame: formiamo veri professionisti del volante capaci di gestire la moderna componentistica digitale di bordo senza incorrere in sanzioni o fermi amministrativi.
+          </p>
+</div>
+<div class="lg:col-span-5 flex justify-start lg:justify-end">
+<div class="p-6 rounded-xl bg-brand-navy-surface border border-slate-700 max-w-sm">
+<span class="font-headline-sm text-headline-sm text-amber-highlight block mb-1">Regolamento CE 561/2006</span>
+<p class="font-body-sm text-body-sm text-outline-variant">
+              Conoscenza rigorosa dei tempi di guida, pause obbligatorie, riposi giornalieri e settimanali per viaggiare in totale sicurezza e legalità.
+            </p>
+</div>
+</div>
+</div>
+<!-- 3 Technical Focus Pillars -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Pillar 1 -->
+<div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition-colors">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-white flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-[24px]" data-icon="memory">memory</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-white mb-3">
+            Cronotachigrafo Smart VDO &amp; Stoneridge
+          </h3>
+<p class="font-body-sm text-body-sm text-outline-variant leading-relaxed mb-4">
+            Laboratorio pratico con postazioni tachigrafiche reali: inserimento carta conducente, registrazioni manuali, stampe scontrini, gestione passaggi frontiera e nuovo standard DSRC.
+          </p>
+<span class="text-xs font-semibold text-sky-400 uppercase tracking-wide">Seconda Generazione v2</span>
+</div>
+<!-- Pillar 2 -->
+<div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition-colors">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-white flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-[24px]" data-icon="inventory_2">inventory_2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-white mb-3">
+            Ancoraggio e Stivaggio del Carico
+          </h3>
+<p class="font-body-sm text-body-sm text-outline-variant leading-relaxed mb-4">
+            Normativa UNI EN 12195: calcolo delle forze d'inerzia, cinghie a cricchetto, catene di trazione, barre fermacarico, distribuzione baricentro e carichi eccezionali.
+          </p>
+<span class="text-xs font-semibold text-sky-400 uppercase tracking-wide">Standard Sicurezza Merci</span>
+</div>
+<!-- Pillar 3 -->
+<div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition-colors">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-white flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-[24px]" data-icon="security">security</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-white mb-3">
+            Masse, Sagome e Guida Difensiva
+          </h3>
+<p class="font-body-sm text-body-sm text-outline-variant leading-relaxed mb-4">
+            Comprensione delle sagome limite, assi sollevabili, ponti sterzanti, prevenzione del ribaltamento (ESP/EBS) e controllo in spazi ridotti o rotatorie strette.
+          </p>
+<span class="text-xs font-semibold text-sky-400 uppercase tracking-wide">Prevenzione Sinistri</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ACCORDI AZIENDE & INSERIMENTO LAVORATIVO -->
+<section class="py-20 bg-surface-container-lowest border-b border-surface-border" id="aziende">
+<div class="max-w-[1240px] mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Column: Context -->
+<div class="lg:col-span-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-electric-blue border border-blue-200 mb-4">
+<span class="font-label-caps text-label-caps uppercase">Opportunità di Carriera</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-brand-navy-dark mb-6">
+            Accordi Territoriali con Aziende di Logistica e TPL
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6 leading-relaxed">
+            La carenza di autisti professionisti nel Lazio è al suo massimo storico. Autoscuola DS collabora direttamente con primari vettori di autotrasporto merci, corrieri espressi, aziende municipalizzate e linee turistiche di Roma e Castelli Romani.
+          </p>
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]" data-icon="business_center">business_center</span>
+</div>
+<div>
+<strong class="font-headline-sm text-headline-sm text-brand-navy-dark block">Canale Diretto di Presentazione Curriculum</strong>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Invio profili qualificati dei nostri allievi alle aziende partner con contratti di assunzione immediata.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]" data-icon="handshake">handshake</span>
+</div>
+<div>
+<strong class="font-headline-sm text-headline-sm text-brand-navy-dark block">Convenzioni Aziendali per Dipendenti</strong>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Piani formativi dedicati a flotte aziendali che necessitano di aggiornamento o conversione patenti.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Trust Card / Partner Cluster -->
+<div class="lg:col-span-6">
+<div class="bg-slate-surface rounded-xl border border-surface-border p-8 shadow-sm">
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark mb-4">
+              Settori ad altissima richiesta di autisti formati DS
+            </h3>
+<div class="space-y-3 mb-6">
+<div class="p-3.5 bg-surface-container-lowest rounded-lg border border-surface-border flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="local_shipping">local_shipping</span>
+<span class="font-label-md text-label-md text-brand-navy-dark">Logistica GDO e Polo Intermodale Roma Sud</span>
+</div>
+<span class="px-2.5 py-0.5 text-[11px] font-bold rounded bg-emerald-50 text-emerald-700">85+ Posti vacanti</span>
+</div>
+<div class="p-3.5 bg-surface-container-lowest rounded-lg border border-surface-border flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="directions_bus">directions_bus</span>
+<span class="font-label-md text-label-md text-brand-navy-dark">Linee Granturismo &amp; Aeroporti Ciampino / Fiumicino</span>
+</div>
+<span class="px-2.5 py-0.5 text-[11px] font-bold rounded bg-emerald-50 text-emerald-700">Richiesta Continua</span>
+</div>
+<div class="p-3.5 bg-surface-container-lowest rounded-lg border border-surface-border flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="construction">construction</span>
+<span class="font-label-md text-label-md text-brand-navy-dark">Movimento Terra &amp; Trasporti Speciali Cantieristici</span>
+</div>
+<span class="px-2.5 py-0.5 text-[11px] font-bold rounded bg-emerald-50 text-emerald-700">Alta Remunerazione</span>
+</div>
+</div>
+<div class="p-4 rounded-lg bg-amber-subtle/60 border border-amber-200">
+<p class="font-body-sm text-body-sm text-amber-900">
+<strong>Bonus Patente Autotrasporto:</strong> I nostri consulenti verificano per te la disponibilità dei fondi e voucher ministeriali fino all'80% della spesa del corso.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PERCORSO INTEGRATO PATENTE SUPERIORE + CQC -->
+<section class="py-16 bg-slate-surface">
+<div class="max-w-[1240px] mx-auto px-6">
+<div class="rounded-2xl bg-gradient-to-r from-primary-container to-brand-navy-dark text-white p-8 md:p-12 relative overflow-hidden shadow-lg">
+<div class="relative z-10 max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm text-amber-highlight font-label-caps text-label-caps uppercase mb-4 border border-white/20">
+<span>Formula Combo Carriera</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-white mb-4">
+            Percorso Integrato Patente Superiore + CQC
+          </h2>
+<p class="font-body-lg text-body-lg text-surface-variant mb-8 leading-relaxed">
+            Ottimizza tempi e costi frequentando in contemporanea la teoria per la patente di categoria C o D e il corso di Qualificazione Carta di Conducente. Percorso unificato con agevolazioni economiche e possibilità di comodo pagamento rateizzato a tasso zero.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
+<div class="border-l-2 border-amber-highlight pl-4">
+<span class="font-headline-md text-headline-md font-bold text-white block">-30%</span>
+<span class="font-body-sm text-body-sm text-outline-variant">Risparmio di tempo complessivo</span>
+</div>
+<div class="border-l-2 border-amber-highlight pl-4">
+<span class="font-headline-md text-headline-md font-bold text-white block">Tasso Zero</span>
+<span class="font-body-sm text-body-sm text-outline-variant">Pagamento in 6 o 10 comode rate</span>
+</div>
+<div class="border-l-2 border-amber-highlight pl-4">
+<span class="font-headline-md text-headline-md font-bold text-white block">140 Ore</span>
+<span class="font-body-sm text-body-sm text-outline-variant">CQC Ordinaria o Accelerata</span>
+</div>
+</div>
+<a class="h-11 px-8 rounded-lg bg-amber-highlight hover:bg-amber-600 text-brand-navy-dark font-label-md text-label-md font-bold inline-flex items-center gap-2 transition-all active:scale-[0.98]" href="#richiesta">
+<span>Richiedi Preventivo Formula Combo</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- MODULO RICHIESTA INFORMAZIONI E PREVENTIVO -->
+<section class="py-20 bg-surface-container-lowest border-b border-surface-border" id="richiesta">
+<div class="max-w-[1240px] mx-auto px-6">
+<div class="max-w-3xl mx-auto text-center mb-12">
+<span class="font-label-caps text-label-caps text-electric-blue uppercase tracking-wider block mb-2">
+          Modulo Diretto Senza Impegno
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-brand-navy-dark mb-4">
+          Richiedi Informazioni o Preventivo Aziendale / Privato
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Compila il form per ricevere il piano di studio dettagliato, il calendario corsi aggiornato e il prospetto delle agevolazioni economiche in vigore.
+        </p>
+</div>
+<div class="max-w-3xl mx-auto bg-slate-surface rounded-xl border border-surface-border p-8 md:p-10 shadow-sm">
+<form class="space-y-6" onsubmit="event.preventDefault(); alert('Grazie per la richiesta. La segreteria didattica dell\'Autoscuola DS ti contatterà entro 24 ore lavorative.');">
+<!-- Tipologia Richiedente -->
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-2">Sei un privato o un'azienda?</label>
+<div class="grid grid-cols-2 gap-4">
+<label class="flex items-center gap-3 p-3.5 bg-surface-container-lowest rounded-lg border border-surface-border-strong cursor-pointer hover:border-primary">
+<input checked="" class="w-4 h-4 text-primary focus:ring-primary" name="richiedente" type="radio" value="privato"/>
+<span class="font-body-md text-body-md text-brand-navy-dark font-medium">Privato / Singolo Autista</span>
+</label>
+<label class="flex items-center gap-3 p-3.5 bg-surface-container-lowest rounded-lg border border-surface-border-strong cursor-pointer hover:border-primary">
+<input class="w-4 h-4 text-primary focus:ring-primary" name="richiedente" type="radio" value="azienda"/>
+<span class="font-body-md text-body-md text-brand-navy-dark font-medium">Azienda di Trasporti / Flotta</span>
+</label>
+</div>
+</div>
+<!-- Patente di Interesse (Multi-checkbox) -->
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-2">Patente Superiore di tuo interesse (seleziona anche più opzioni):</label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+<label class="flex items-center gap-2.5 p-3 bg-surface-container-lowest rounded-lg border border-surface-border-strong cursor-pointer hover:border-primary">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary" name="patente" type="checkbox" value="C"/>
+<span class="font-label-md text-label-md text-brand-navy-dark">Patente C / C1</span>
+</label>
+<label class="flex items-center gap-2.5 p-3 bg-surface-container-lowest rounded-lg border border-surface-border-strong cursor-pointer hover:border-primary">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary" name="patente" type="checkbox" value="CE"/>
+<span class="font-label-md text-label-md text-brand-navy-dark">Patente CE</span>
+</label>
+<label class="flex items-center gap-2.5 p-3 bg-surface-container-lowest rounded-lg border border-surface-border-strong cursor-pointer hover:border-primary">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary" name="patente" type="checkbox" value="D"/>
+<span class="font-label-md text-label-md text-brand-navy-dark">Patente D / D1</span>
+</label>
+<label class="flex items-center gap-2.5 p-3 bg-surface-container-lowest rounded-lg border border-surface-border-strong cursor-pointer hover:border-primary">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary" name="patente" type="checkbox" value="DE"/>
+<span class="font-label-md text-label-md text-brand-navy-dark">Patente DE</span>
+</label>
+</div>
+</div>
+<!-- Patente già posseduta & CQC combo -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-2" for="patente-attuale">Patente attualmente posseduta *</label>
+<select class="w-full h-11 px-3.5 bg-surface-container-lowest border border-surface-border-strong rounded-lg text-brand-navy-dark font-body-md text-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100" id="patente-attuale">
+<option value="B">Patente B (da oltre 1 anno)</option>
+<option value="B-neo">Patente B (neopatentato)</option>
+<option value="C">Patente C (per estensione CE o D)</option>
+<option value="D">Patente D (per estensione DE)</option>
+<option value="nessuna">Altro / Patente estera da convertire</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-2" for="integrazione-cqc">Integrazione CQC Professionale</label>
+<select class="w-full h-11 px-3.5 bg-surface-container-lowest border border-surface-border-strong rounded-lg text-brand-navy-dark font-body-md text-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100" id="integrazione-cqc">
+<option value="si-merci">Sì, includi CQC Merci (Combinato)</option>
+<option value="si-persone">Sì, includi CQC Persone (Combinato)</option>
+<option value="possiedo">Possiedo già carta CQC attiva</option>
+<option value="no">Solo patente superiore</option>
+</select>
+</div>
+</div>
+<!-- Dati Anagrafici -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-2" for="nome">Nome e Cognome / Ragione Sociale *</label>
+<input class="w-full h-11 px-3.5 bg-surface-container-lowest border border-surface-border-strong rounded-lg text-brand-navy-dark font-body-md text-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100 placeholder:text-outline-variant" id="nome" placeholder="Es. Marco Rossi" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-2" for="telefono">Telefono Cellulare *</label>
+<input class="w-full h-11 px-3.5 bg-surface-container-lowest border border-surface-border-strong rounded-lg text-brand-navy-dark font-body-md text-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100 placeholder:text-outline-variant" id="telefono" placeholder="Es. 333 1234567" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-2" for="email">Indirizzo Email *</label>
+<input class="w-full h-11 px-3.5 bg-surface-container-lowest border border-surface-border-strong rounded-lg text-brand-navy-dark font-body-md text-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100 placeholder:text-outline-variant" id="email" placeholder="latuaemail@dominio.it" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-2" for="note">Note o richieste particolari (es. disponibilità orarie serali/sabato)</label>
+<textarea class="w-full p-3.5 bg-surface-container-lowest border border-surface-border-strong rounded-lg text-brand-navy-dark font-body-md text-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100 placeholder:text-outline-variant" id="note" placeholder="Scrivi qui eventuali domande..." rows="3"></textarea>
+</div>
+<!-- Privacy Acceptance -->
+<div class="flex items-start gap-2.5">
+<input class="w-4 h-4 mt-0.5 rounded text-primary focus:ring-primary" id="privacy" required="" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface-variant" for="privacy">
+              Dichiaro di aver letto e accetto l'<a class="text-primary underline" href="privacy.html">Informativa Privacy</a> per il trattamento dei dati personali ai fini del preventivo.
+            </label>
+</div>
+<!-- Submit Button -->
+<button class="w-full h-12 bg-primary-container hover:bg-brand-navy-dark text-white font-label-md text-label-md font-bold rounded-lg shadow-sm hover:shadow transition-all duration-150 active:scale-[0.98] flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-[20px]" data-icon="send">send</span>
+<span>Invia Richiesta Preventivo Gratuito</span>
+</button>
+<p class="text-center font-body-sm text-body-sm text-on-surface-variant">
+            Nessun vincolo d'iscrizione. Riceverai risposta entro 24 ore con il costo trasparente senza costi nascosti.
+          </p>
+</form>
+</div>
+</div>
+</section>
+<!-- FOOTER (Shared Components Blueprint Implementation) -->
+<footer class="bg-brand-navy-dark text-white border-t border-brand-navy-surface">
+<div class="max-w-[1240px] mx-auto px-6 py-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+<!-- Brand & Headquarters -->
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg font-bold text-surface-bright mb-3">
+            AUTOSCUOLA DS
+          </span>
+<p class="font-body-sm text-body-sm text-outline-variant mb-4 leading-relaxed">
+            Centro di istruzione automobilistica e qualificazione professionale per conducenti. Didattica d'avanguardia a Ciampino.
+          </p>
+<div class="flex items-center gap-2 text-outline-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-amber-highlight" data-icon="location_on">location_on</span>
+<span>Via Palermo 2/D, 00043 Ciampino (RM)</span>
+</div>
+<div class="flex items-center gap-2 text-outline-variant font-body-sm text-body-sm mt-2">
+<span class="material-symbols-outlined text-[18px] text-amber-highlight" data-icon="call">call</span>
+<span>Tel: 06 7910000 • Cell: 338 0000000</span>
+</div>
+</div>
+<!-- Percorsi Patenti -->
+<div>
+<span class="font-headline-sm text-headline-sm text-white block mb-4">Patenti Superiori</span>
+<ul class="space-y-2.5">
+<li><a class="font-body-sm text-body-sm text-outline-variant hover:text-amber-highlight transition-colors duration-150" href="#patenti">Patente C &amp; C1 Merci</a></li>
+<li><a class="font-body-sm text-body-sm text-outline-variant hover:text-amber-highlight transition-colors duration-150" href="#patenti">Patente CE Autoarticolati</a></li>
+<li><a class="font-body-sm text-body-sm text-outline-variant hover:text-amber-highlight transition-colors duration-150" href="#patenti">Patente D Trasporto Persone</a></li>
+<li><a class="font-body-sm text-body-sm text-outline-variant hover:text-amber-highlight transition-colors duration-150" href="#patenti">Patente DE Autosnodati</a></li>
+<li><a class="font-body-sm text-body-sm text-outline-variant hover:text-amber-highlight transition-colors duration-150" href="#patenti">Estensioni E Speciali</a></li>
+</ul>
+</div>
+<!-- Servizi Professionali -->
+<div>
+<span class="font-headline-sm text-headline-sm text-white block mb-4">Servizi Professionali</span>
+<ul class="space-y-2.5">
+<li><a class="font-body-sm text-body-sm text-outline-variant hover:text-amber-highlight transition-colors duration-150" href="cqc.html">CQC Merci e Persone</a></li>
+<li><a class="font-body-sm text-body-sm text-outline-variant hover:text-amber-highlight transition-colors duration-150" href="#didattica">Corsi Cronotachigrafo 2.0</a></li>
+<li><a class="font-body-sm text-body-sm text-outline-variant hover:text-amber-highlight transition-colors duration-150" href="recupero-punti.html">Recupero Punti C &amp; D</a></li>
+<li><a class="font-body-sm text-body-sm text-outline-variant hover:text-amber-highlight transition-colors duration-150" href="documenti.html">Rinnovo Patente con Medico in Sede</a></li>
+<li><a class="font-body-sm text-body-sm text-outline-variant hover:text-amber-highlight transition-colors duration-150" href="contatti.html">Formazione Flotte Aziendali</a></li>
+</ul>
+</div>
+<!-- Orari di Apertura e Sportello -->
+<div>
+<span class="font-headline-sm text-headline-sm text-white block mb-4">Orari Segreteria Didattica</span>
+<div class="space-y-2 text-outline-variant font-body-sm text-body-sm">
+<p><strong>Lunedì - Venerdì:</strong><br/>09:30 - 13:00 | 15:30 - 19:30</p>
+<p><strong>Sabato:</strong><br/>09:30 - 12:30 (su appuntamento)</p>
+<p><strong>Domenica:</strong> Chiuso</p>
+</div>
+<div class="mt-4 pt-4 border-t border-brand-navy-surface">
+<span class="inline-block px-2.5 py-1 rounded bg-brand-navy-surface text-amber-highlight text-xs font-semibold">
+              Medico in sede ogni Giovedì
+            </span>
+</div>
+</div>
+</div>
+<!-- Footer Bottom Bar with Mandatory Copyright -->
+<div class="pt-8 border-t border-brand-navy-surface flex flex-col md:flex-row items-center justify-between gap-4">
+<p class="font-body-sm text-body-sm text-outline-variant text-center md:text-left">
+          © 2025 Autoscuola DS di Aldo Di Stadio - P.IVA 01234567890 - Tutti i diritti riservati
+        </p>
+<div class="flex items-center gap-6">
+<a class="font-body-sm text-body-sm text-outline-variant hover:text-surface-bright transition-colors" href="privacy.html">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-outline-variant hover:text-surface-bright transition-colors" href="privacy.html">Cookie Policy</a>
+<a class="font-body-sm text-body-sm text-outline-variant hover:text-surface-bright transition-colors" href="mappa-sito.html">Mappa del Sito</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

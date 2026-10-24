@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="light" lang="it">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Mappa del Sito | AUTOSCUOLA DS</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "brand-navy-dark": "#0F172A",
+          "brand-navy-surface": "#1E293B",
+          "electric-blue": "#2563EB",
+          "primary-container": "#1e3a8a",
+          "primary": "#00236f",
+          "surface": "#faf8ff",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-low": "#f2f3ff",
+          "slate-surface": "#F8FAFC",
+          "surface-border": "#E2E8F0",
+          "surface-border-strong": "#CBD5E1",
+          "on-surface": "#131b2e",
+          "on-surface-variant": "#444651",
+          "outline-variant": "#c5c5d3",
+          "amber-highlight": "#F59E0B",
+          "secondary-container": "#5bb8fe"
+        },
+        fontFamily: {
+          "headline-lg": ["Plus Jakarta Sans"],
+          "headline-md": ["Plus Jakarta Sans"],
+          "headline-sm": ["Plus Jakarta Sans"],
+          "label-lg": ["Plus Jakarta Sans"],
+          "label-md": ["Plus Jakarta Sans"],
+          "body-md": ["Inter"],
+          "body-sm": ["Inter"]
+        },
+        fontSize: {
+          "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+          "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }],
+          "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+          "label-lg": ["15px", { "lineHeight": "20px", "fontWeight": "600" }],
+          "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "600" }],
+          "body-md": ["15px", { "lineHeight": "24px" }],
+          "body-sm": ["13px", { "lineHeight": "20px" }]
+        }
+      }
+    }
+  };
+</script>
+</head>
+<body class="bg-slate-surface text-on-surface antialiased min-h-screen flex flex-col font-body-md text-body-md">
+<header class="sticky top-0 z-50 h-[72px] bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-border shadow-sm">
+  <div class="max-w-[1240px] mx-auto px-6 flex items-center justify-between h-full">
+    <a class="flex items-center gap-2 group" href="index.html">
+      <div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-white shadow-sm">
+        <span class="material-symbols-outlined text-[20px]">directions_car</span>
+      </div>
+      <span class="font-headline-md text-headline-md font-bold tracking-tight text-brand-navy-dark">AUTOSCUOLA <span class="text-electric-blue">DS</span></span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8">
+      <a class="font-label-lg text-label-lg text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1" href="index.html">Home</a>
+      <a class="font-label-lg text-label-lg text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1" href="corsi.html">Corsi</a>
+      <a class="font-label-lg text-label-lg text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1" href="documenti.html">Rinnovo</a>
+      <a class="font-label-lg text-label-lg text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1" href="blog.html">Blog</a>
+      <a class="font-label-lg text-label-lg text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1" href="contatti.html">Contatti</a>
+    </nav>
+    <a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary-container hover:bg-brand-navy-dark text-white font-label-md text-label-md shadow-sm transition-all" href="contatti.html#form-sezione">
+      <span class="material-symbols-outlined text-[18px]">school</span>
+      <span>Iscriviti Online</span>
+    </a>
+  </div>
+</header>
+
+<main class="flex-grow">
+  <section class="bg-surface-container-lowest border-b border-surface-border py-12">
+    <div class="max-w-[1240px] mx-auto px-6">
+      <h1 class="font-headline-lg text-headline-lg text-brand-navy-dark mb-3">Mappa del Sito</h1>
+      <p class="font-body-md text-body-md text-on-surface-variant">Tutte le pagine e le sezioni del sito dell'Autoscuola DS.</p>
+    </div>
+  </section>
+
+  <section class="max-w-[1240px] mx-auto px-6 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-surface-container-lowest rounded-xl border border-surface-border p-6 shadow-sm">
+        <h2 class="font-headline-sm text-headline-sm text-brand-navy-dark mb-4">Pagine principali</h2>
+        <ul class="space-y-2.5 font-body-md text-body-md">
+          <li><a class="text-electric-blue hover:underline" href="index.html">Home</a></li>
+          <li><a class="text-electric-blue hover:underline" href="corsi.html">Corsi</a></li>
+          <li><a class="text-electric-blue hover:underline" href="documenti.html">Documenti e Rinnovo</a></li>
+          <li><a class="text-electric-blue hover:underline" href="blog.html">Blog e Approfondimenti</a></li>
+          <li><a class="text-electric-blue hover:underline" href="contatti.html">Contatti</a></li>
+          <li><a class="text-electric-blue hover:underline" href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="bg-surface-container-lowest rounded-xl border border-surface-border p-6 shadow-sm">
+        <h2 class="font-headline-sm text-headline-sm text-brand-navy-dark mb-4">Corsi</h2>
+        <ul class="space-y-2.5 font-body-md text-body-md">
+          <li><a class="text-electric-blue hover:underline" href="patente-b.html">Patente B</a></li>
+          <li><a class="text-electric-blue hover:underline" href="corsi.html#patente-a">Patente A</a></li>
+          <li><a class="text-electric-blue hover:underline" href="patenti-superiori.html">Patenti Superiori C/D/E</a></li>
+          <li><a class="text-electric-blue hover:underline" href="cqc.html">CQC Merci e Persone</a></li>
+          <li><a class="text-electric-blue hover:underline" href="recupero-punti.html">Recupero Punti</a></li>
+          <li><a class="text-electric-blue hover:underline" href="corsi.html#iscrizione">Iscrizione</a></li>
+        </ul>
+      </div>
+
+      <div class="bg-surface-container-lowest rounded-xl border border-surface-border p-6 shadow-sm">
+        <h2 class="font-headline-sm text-headline-sm text-brand-navy-dark mb-4">Privacy</h2>
+        <ul class="space-y-2.5 font-body-md text-body-md">
+          <li><a class="text-electric-blue hover:underline" href="privacy.html#titolare">Titolare del Trattamento</a></li>
+          <li><a class="text-electric-blue hover:underline" href="privacy.html#tipologie-dati">Tipologie di Dati Raccolti</a></li>
+          <li><a class="text-electric-blue hover:underline" href="privacy.html#finalita">Finalità e Base Giuridica</a></li>
+          <li><a class="text-electric-blue hover:underline" href="privacy.html#sicurezza">Misure di Sicurezza</a></li>
+          <li><a class="text-electric-blue hover:underline" href="privacy.html#conservazione">Conservazione</a></li>
+          <li><a class="text-electric-blue hover:underline" href="privacy.html#diritti">Diritti dell'interessato</a></li>
+          <li><a class="text-electric-blue hover:underline" href="privacy.html#supporto-dati">Supporto Dati</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-brand-navy-dark text-white">
+  <div class="max-w-[1240px] mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p class="text-xs text-outline-variant">© 2025 Autoscuola DS di Aldo Di Stadio - Tutti i diritti riservati</p>
+    <div class="flex items-center gap-6 text-xs">
+      <a class="hover:text-amber-highlight transition-colors" href="privacy.html">Privacy Policy</a>
+      <a class="hover:text-amber-highlight transition-colors" href="mappa-sito.html">Mappa del Sito</a>
+      <a class="hover:text-amber-highlight transition-colors" href="contatti.html">Contatti</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

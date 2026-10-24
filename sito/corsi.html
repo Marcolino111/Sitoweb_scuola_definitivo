@@ -1,0 +1,653 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="it" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>I Nostri Corsi &amp; Patenti | Autoscuola DS di Aldo Di Stadio</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS & Theme Config -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "brand-navy-dark": "#0F172A",
+            "critical-red": "#EF4444",
+            "error": "#ba1a1a",
+            "on-background": "#131b2e",
+            "on-tertiary-fixed": "#2a1700",
+            "surface-border": "#E2E8F0",
+            "on-error-container": "#93000a",
+            "on-primary": "#ffffff",
+            "surface-bright": "#faf8ff",
+            "on-primary-fixed-variant": "#264191",
+            "secondary-container": "#5bb8fe",
+            "error-container": "#ffdad6",
+            "inverse-on-surface": "#eef0ff",
+            "slate-surface": "#F8FAFC",
+            "on-error": "#ffffff",
+            "tertiary-fixed": "#ffddb8",
+            "electric-blue": "#2563EB",
+            "on-secondary-fixed": "#001d31",
+            "on-surface": "#131b2e",
+            "secondary": "#006398",
+            "on-tertiary-container": "#ef9900",
+            "tertiary": "#3e2400",
+            "primary-container": "#1e3a8a",
+            "inverse-surface": "#283044",
+            "surface-tint": "#4059aa",
+            "surface-container-high": "#e2e7ff",
+            "on-tertiary-fixed-variant": "#653e00",
+            "critical-surface": "#FEE2E2",
+            "brand-navy-surface": "#1E293B",
+            "surface": "#faf8ff",
+            "primary-fixed": "#dce1ff",
+            "surface-container-lowest": "#ffffff",
+            "outline": "#757682",
+            "on-secondary-fixed-variant": "#004b73",
+            "inverse-primary": "#b6c4ff",
+            "tertiary-fixed-dim": "#ffb95f",
+            "surface-container-low": "#f2f3ff",
+            "on-primary-container": "#90a8ff",
+            "amber-highlight": "#F59E0B",
+            "success-green": "#10B981",
+            "secondary-fixed": "#cce5ff",
+            "primary-fixed-dim": "#b6c4ff",
+            "outline-variant": "#c5c5d3",
+            "background": "#faf8ff",
+            "primary": "#00236f",
+            "secondary-fixed-dim": "#93ccff",
+            "surface-dim": "#d2d9f4",
+            "surface-variant": "#dae2fd",
+            "surface-border-strong": "#CBD5E1",
+            "surface-container": "#eaedff",
+            "amber-subtle": "#FEF3C7",
+            "on-tertiary": "#ffffff",
+            "surface-container-highest": "#dae2fd",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#00476e",
+            "on-primary-fixed": "#00164e",
+            "tertiary-container": "#5c3800",
+            "on-surface-variant": "#444651"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "gutter-mobile": "1rem",
+            "gutter": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-lg": "1.5rem",
+            "space-2xl": "4rem",
+            "margin": "1.5rem",
+            "margin-mobile": "1rem",
+            "space-3xl": "6rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Inter"],
+            "display-hero": ["Plus Jakarta Sans"],
+            "body-md": ["Inter"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Plus Jakarta Sans"],
+            "label-caps": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "body-sm": ["Inter"]
+          },
+          "fontSize": {
+            "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "800" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "display-hero-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-surface text-brand-navy-dark antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-white">
+<!-- ==================== HEADER (TOP NAVBAR SHARED COMPONENT) ==================== -->
+<header class="fixed top-0 left-0 w-full z-50 h-[72px] bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-border shadow-sm">
+<div class="max-w-[1240px] mx-auto px-6 flex items-center justify-between h-full">
+<!-- Logo Anchor -->
+<a class="flex items-center gap-3 group" href="index.html">
+<div class="w-10 h-10 rounded-lg bg-brand-navy-dark flex items-center justify-center text-white font-headline-md font-bold shadow-sm transition-transform group-hover:scale-105">
+<span class="text-amber-highlight">D</span>S
+        </div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold tracking-tight text-brand-navy-dark">AUTOSCUOLA DS</span>
+<span class="font-label-caps text-[10px] tracking-wider text-outline uppercase font-semibold">Dal 1980 / Autoscuola &amp; Agenzia</span>
+</div>
+</a>
+<!-- Desktop Nav Items -->
+<nav class="hidden md:flex items-center space-x-8"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1" href="index.html">Home</a>
+<div class="relative group py-2">
+  <a class="font-label-lg text-label-lg text-brand-navy-dark font-semibold border-b-2 border-electric-blue pb-1 inline-flex items-center gap-1" href="corsi.html">
+    <span class="">Corsi</span>
+    <span class="material-symbols-outlined text-[18px] text-on-surface-variant transition-transform group-hover:rotate-180">expand_more</span>
+  </a>
+  <div class="absolute left-0 top-full pt-2 w-64 hidden group-hover:block z-50 transition-all">
+    <div class="bg-surface-container-lowest rounded-xl shadow-lg border border-surface-border p-2 space-y-1">
+      <a class="block px-3 py-2 text-body-sm font-label-md text-brand-navy-dark rounded-lg hover:bg-slate-surface transition-colors" href="patente-b.html">Patente B &amp; Moto</a>
+      <a class="block px-3 py-2 text-body-sm font-label-md text-brand-navy-dark rounded-lg hover:bg-slate-surface transition-colors" href="patenti-superiori.html">Patenti Superiori</a>
+      <a class="block px-3 py-2 text-body-sm font-label-md text-brand-navy-dark rounded-lg hover:bg-slate-surface transition-colors" href="cqc.html">CQC Professionale</a>
+      <a class="block px-3 py-2 text-body-sm font-label-md text-brand-navy-dark rounded-lg hover:bg-slate-surface transition-colors" href="recupero-punti.html">Recupero Punti</a>
+    </div>
+  </div>
+</div>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1" href="documenti.html">Rinnovo</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1" href="blog.html">Blog</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1" href="contatti.html">Contatti</a></nav>
+<!-- Trailing Actions Cluster -->
+<div class="flex items-center space-x-3">
+
+<a class="inline-flex items-center justify-center px-4 py-2 bg-primary-container text-white font-label-md text-label-md rounded-lg shadow-sm hover:bg-brand-navy-dark active:scale-[0.98] transition-all duration-150" href="#iscrizione">
+          Iscriviti Online
+        </a>
+</div>
+</div>
+</header>
+<!-- Main Canvas Content -->
+<main class="flex-grow pt-[72px]">
+<!-- ==================== HERO SECTION ==================== -->
+<section class="relative bg-surface-container-lowest border-b border-surface-border overflow-hidden py-14 md:py-20">
+<!-- Precision Background Grid Texture -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#0F172A 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="max-w-[1240px] mx-auto px-6 relative z-10">
+<div class="max-w-3xl">
+<!-- Institutional Pill Badge -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container border border-surface-border-strong text-primary mb-6">
+<span class="w-2 h-2 rounded-full bg-success-green animate-pulse"></span>
+<span class="font-label-caps text-label-caps tracking-wider text-brand-navy-dark uppercase">Centro Formativo Abilitato M.I.T. • Sede di Ciampino</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-brand-navy-dark tracking-tight mb-4">
+            I Nostri Corsi &amp; Patenti
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-8">
+            La tua strada verso la libertà e la professionalità inizia qui. Percorsi formativi certificati a Ciampino per patenti auto, moto, corsi professionali CQC e recupero punti.
+          </p>
+<!-- Interactive Fast-Filter Tabs -->
+<div class="flex flex-wrap gap-2.5 pt-2" id="filter-container">
+<button class="filter-btn active-filter px-4 py-2 rounded-full text-label-md font-label-md bg-brand-navy-dark text-white border border-brand-navy-dark shadow-sm transition-all duration-150" data-filter="all" onclick="filterCourses('all')">
+              Tutti i Corsi
+            </button>
+<button class="filter-btn px-4 py-2 rounded-full text-label-md font-label-md bg-surface-container-lowest text-on-surface-variant border border-surface-border hover:border-surface-border-strong hover:text-brand-navy-dark transition-all duration-150" data-filter="auto-moto" onclick="filterCourses('auto-moto')">
+              Auto &amp; Moto
+            </button>
+<button class="filter-btn px-4 py-2 rounded-full text-label-md font-label-md bg-surface-container-lowest text-on-surface-variant border border-surface-border hover:border-surface-border-strong hover:text-brand-navy-dark transition-all duration-150" data-filter="professionali" onclick="filterCourses('professionali')">
+              Professionali &amp; CQC
+            </button>
+<button class="filter-btn px-4 py-2 rounded-full text-label-md font-label-md bg-surface-container-lowest text-on-surface-variant border border-surface-border hover:border-surface-border-strong hover:text-brand-navy-dark transition-all duration-150" data-filter="recupero" onclick="filterCourses('recupero')">
+              Recupero Punti
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== BENTO GRID SECTION ==================== -->
+<section class="py-14 md:py-20" id="corsi-grid">
+<div class="max-w-[1240px] mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- 1. FEATURED HERO BENTO: PATENTE B (8 Columns) -->
+<div class="course-card col-span-1 md:col-span-8 bg-surface-container-lowest rounded-xl border border-surface-border p-6 md:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-surface-border-strong transition-all duration-200 scroll-mt-24" data-category="auto-moto" id="patente-b">
+<div>
+<div class="flex flex-wrap items-center justify-between gap-3 mb-5">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-amber-subtle text-amber-highlight border border-[#FDE68A] font-label-caps text-label-caps font-bold">
+                    ★ PIÙ RICHIESTO
+                  </span>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-[#EFF6FF] text-[#1E40AF] border border-[#BFDBFE] font-label-caps text-label-caps">
+                    CATEGORIA B
+                  </span>
+</div>
+<div class="text-right">
+<span class="font-label-caps text-outline uppercase tracking-wider block">Esami in Sede</span>
+<span class="font-headline-sm text-headline-sm text-brand-navy-dark">Sessioni Mensili</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+<div class="lg:col-span-7">
+<h3 class="font-headline-lg text-headline-lg text-brand-navy-dark mb-2">
+                    Patente B (Autovetture)
+                  </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-5">
+                    Abilita alla guida di autoveicoli fino a 3.500 kg e massimo 9 posti. Formazione completa con piattaforma quiz interattiva certificata, lezioni multimediali in aula climatizzata e simulatori di guida.
+                  </p>
+<!-- Key Specifications Micro-List -->
+<div class="space-y-2.5 mb-6">
+<div class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-electric-blue">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+</div>
+<span class="font-body-sm text-body-sm text-brand-navy-dark"><strong class="font-semibold">6 ore obbligatorie</strong> di guida certificate (notturna, extraurbana, autostrada)</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-electric-blue">
+<span class="material-symbols-outlined text-[16px]">person_check</span>
+</div>
+<span class="font-body-sm text-body-sm text-brand-navy-dark"><strong class="font-semibold">Requisiti:</strong> 18 anni compiuti (o Guida Accompagnata a 17 anni con patente A1)</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-electric-blue">
+<span class="material-symbols-outlined text-[16px]">directions_car</span>
+</div>
+<span class="font-body-sm text-body-sm text-brand-navy-dark"><strong class="font-semibold">Flotta:</strong> Veicoli moderni Euro 6 con sistemi avanzati ADAS</span>
+</div>
+</div>
+</div>
+<!-- Visual Media Display -->
+<div class="lg:col-span-5 relative h-56 lg:h-64 rounded-lg overflow-hidden border border-surface-border">
+<img class="w-full h-full object-cover" data-alt="A sleek modern compact driving school car parked under crisp directional studio lighting with subtle navy and slate tones. The vehicle showcases state of the art safety features in a pristine contemporary automotive workshop environment, captured with sharp focus and refined European automotive styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvqF84ZNnyGjtHEcDrqiTOYKwVMFhfjevEv5kCEWDjyImZXqPyUIthlwJxHa3SOBdVfxvYqoRQVpGBGvynLz1KQ1gpGL7pPee_nZON-0wN-O51zheO896pgexJt6YRISX2WRm0c0ZQsxCwsPWNAfK2ZEZhXmNVrleR9EDj5VoGL2T_p2Tk3tRzp6QFnROhfW2RMXAK3iUE7uaG4YynUTSgtZDAa3Y9b6dx4JmesK4tw4rRZkj5xoBdJQ">
+<div class="absolute bottom-3 left-3 bg-brand-navy-dark/90 backdrop-blur-sm text-white px-3 py-1 rounded text-[11px] font-label-caps tracking-wider">
+                    PARCO AUTO DS
+                  </div>
+</div>
+</div>
+</div>
+<!-- Footer Action Row -->
+<div class="pt-5 mt-6 border-t border-surface-border flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-success-green">verified</span>
+<span class="">Iscrizioni sempre aperte con lezioni mattina e sera</span>
+</div>
+<div class="flex items-center gap-3">
+<a class="px-5 py-2.5 bg-brand-navy-dark text-white rounded-lg font-label-md text-label-md hover:bg-primary-container active:scale-[0.98] transition-all" href="patente-b.html">
+                  Richiedi Informazioni
+                </a>
+</div>
+</div>
+</div>
+<!-- 2. PATENTE A (Moto) (4 Columns) -->
+<div class="course-card col-span-1 md:col-span-4 bg-surface-container-lowest rounded-xl border border-surface-border p-6 md:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-surface-border-strong transition-all duration-200 scroll-mt-24" data-category="auto-moto" id="patente-a">
+<div>
+<div class="flex items-center justify-between gap-2 mb-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-[#EFF6FF] text-[#1E40AF] border border-[#BFDBFE] font-label-caps text-label-caps">
+                  MOTO • A1, A2, A3
+                </span>
+<span class="material-symbols-outlined text-outline text-[22px]">two_wheeler</span>
+</div>
+<!-- Media -->
+<div class="h-40 rounded-lg overflow-hidden border border-surface-border mb-4">
+<img class="w-full h-full object-cover" data-alt="A high-performance modern learner motorcycle staged on an engineered asphalt training circuit. Crisp daylight illuminates the mechanical engine details and polished fairings with deep navy and slate grey tones, echoing precision handling and road training mastery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjEGRQZxjsdJJwsxZvNdhEbc4u8wQE30G2ts3685ieNwMMd3Z87Qk2P6kU90rW-ow153BH9aMm9oBVW-jhGoL9-U8OCtZq5sAIHniND6E4oo7oep5fF___igXq-A3Kcvx7y59abNiBuwJerjxxWcRDFIdl9ynYquiBbNLzpHPO9RGJsEsP94egfifoLm5pCZ-cc1-kf19b9Tklpae3HfCPPwTC8UuB2AZiRd5gmaZqYdnh7cq4_1zJsQ">
+</div>
+<h3 class="font-headline-md text-headline-md text-brand-navy-dark mb-2">
+                Patenti Moto (A1, A2, A)
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                Dallo scooter 125cc fino alle moto di grossa cilindrata senza limiti di potenza. Pista prove dedicata e moto scuola conformi.
+              </p>
+<ul class="space-y-2 border-t border-surface-border pt-4 mb-4 font-body-sm text-body-sm text-brand-navy-dark">
+<li class="flex items-center justify-between">
+<span class="text-on-surface-variant">Patente A1:</span>
+<span class="font-semibold">16 anni (fino a 125cc / 11kW)</span>
+</li>
+<li class="flex items-center justify-between">
+<span class="text-on-surface-variant">Patente A2:</span>
+<span class="font-semibold">18 anni (fino a 35kW)</span>
+</li>
+<li class="flex items-center justify-between">
+<span class="text-on-surface-variant">Patente A (Accesso diretto):</span>
+<span class="font-semibold">24 anni o 2 anni di A2</span>
+</li>
+</ul>
+</div>
+<div class="pt-4 border-t border-surface-border">
+<a class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-surface-border text-brand-navy-dark font-label-md text-label-md hover:bg-slate-surface active:scale-[0.98] transition-all" href="patente-b.html">
+<span class="">Dettagli Corsi Moto</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 3. CQC PROFESSIONALE (Merci & Persone) (7 Columns) -->
+<div class="course-card col-span-1 md:col-span-7 bg-brand-navy-dark text-white rounded-xl border border-brand-navy-surface p-6 md:p-8 flex flex-col justify-between shadow-sm relative overflow-hidden scroll-mt-24" data-category="professionali" id="cqc">
+<!-- Subtle accent lines in background -->
+<div class="absolute right-0 top-0 w-64 h-64 bg-electric-blue/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10">
+<div class="flex flex-wrap items-center justify-between gap-3 mb-5">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-amber-highlight text-brand-navy-dark font-label-caps text-label-caps font-bold">
+                  ABILITAZIONE PROFESSIONALE
+                </span>
+<span class="text-xs font-label-caps uppercase text-outline-variant tracking-wider">
+                  Direttiva Europea 2003/59/CE
+                </span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-white mb-2">
+                CQC - Carta di Qualificazione del Conducente
+              </h3>
+<p class="font-body-md text-body-md text-outline-variant mb-6">
+                Obbligatoria per tutti i conducenti che esercitano l'attività di autotrasporto in modo professionale. Corsi ordinari e accelerati con istruttori accreditati.
+              </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+<div class="p-4 rounded-lg bg-brand-navy-surface border border-white/10">
+<div class="flex items-center gap-2 mb-2 text-amber-highlight">
+<span class="material-symbols-outlined">local_shipping</span>
+<span class="font-headline-sm text-headline-sm">CQC Merci</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline-variant">Per il trasporto di cose su veicoli categoria C1, C, C1E, CE. Modulo specialistico logistica.</p>
+</div>
+<div class="p-4 rounded-lg bg-brand-navy-surface border border-white/10">
+<div class="flex items-center gap-2 mb-2 text-amber-highlight">
+<span class="material-symbols-outlined">directions_bus</span>
+<span class="font-headline-sm text-headline-sm">CQC Persone</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline-variant">Per il trasporto di passeggeri su veicoli categoria D1, D, D1E, DE. Sicurezza passeggeri.</p>
+</div>
+</div>
+<!-- Specs strip -->
+<div class="flex flex-wrap gap-y-2 gap-x-6 py-3 border-t border-white/10 font-body-sm text-body-sm text-outline-variant">
+<div class=""><strong class="text-white">Durata Corso:</strong> 140 ore (Ordinario) o 280 ore</div>
+<div class=""><strong class="text-white">Rinnovo CQC:</strong> Corso periodico di 35 ore senza esame</div>
+</div>
+</div>
+<div class="pt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 relative z-10">
+<span class="text-xs text-outline-variant">Richiedi il calendario delle prossime sessioni d'aula</span>
+<a class="px-5 py-2.5 bg-amber-highlight text-brand-navy-dark rounded-lg font-label-md text-label-md font-bold hover:bg-[#d97706] active:scale-[0.98] transition-all" href="cqc.html">
+                Consulenza Professionale
+              </a>
+</div>
+</div>
+<!-- 4. PATENTI SUPERIORI C, D, E (5 Columns) -->
+<div class="course-card col-span-1 md:col-span-5 bg-surface-container-lowest rounded-xl border border-surface-border p-6 md:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-surface-border-strong transition-all duration-200 scroll-mt-24" data-category="professionali" id="patenti-superiori">
+<div>
+<div class="flex items-center justify-between gap-2 mb-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-[#EFF6FF] text-[#1E40AF] border border-[#BFDBFE] font-label-caps text-label-caps">
+                  MEZZI PESANTI • C, D, E
+                </span>
+<span class="material-symbols-outlined text-outline text-[22px]">front_loader</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-brand-navy-dark mb-2">
+                Patenti Superiori (C, D, E)
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                I percorsi completi per entrare nel settore della logistica industriale e del trasporto turistico su gomma.
+              </p>
+<div class="space-y-3 mb-6">
+<div class="p-3 rounded-lg bg-slate-surface border border-surface-border">
+<div class="font-label-md text-label-md text-brand-navy-dark font-semibold">Patente C &amp; CE (Camion &amp; Autoarticolati)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Guida di mezzi pesanti per conto proprio e terzi senza limiti di massa complessiva.</div>
+</div>
+<div class="p-3 rounded-lg bg-slate-surface border border-surface-border">
+<div class="font-label-md text-label-md text-brand-navy-dark font-semibold">Patente D &amp; DE (Pullman &amp; Autosnodati)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Abilitazione alla guida di autobus per trasporto turistico e di linea.</div>
+</div>
+</div>
+</div>
+<div class="pt-4 border-t border-surface-border">
+<a class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-surface-border text-brand-navy-dark font-label-md text-label-md hover:bg-slate-surface active:scale-[0.98] transition-all" href="patenti-superiori.html">
+<span class="">Richiedi Piano di Studi Superiori</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 5. RECUPERO PUNTI PATENTE (Full Width 12 Columns) -->
+<div class="course-card col-span-1 md:col-span-12 bg-surface-container-lowest rounded-xl border border-surface-border p-6 md:p-8 shadow-sm hover:shadow-md hover:border-surface-border-strong transition-all duration-200 scroll-mt-24" data-category="recupero" id="recupero-punti">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+<div class="lg:max-w-xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-critical-surface text-critical-red border border-[#FECACA] font-label-caps text-label-caps font-bold mb-3">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+                  SALVAGUARDIA PATENTE
+                </div>
+<h3 class="font-headline-lg text-headline-lg text-brand-navy-dark mb-2">
+                  Corsi Recupero Punti Patente &amp; CQC
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                  Non rischiare la revoca o la sospensione della tua patente. Corsi veloci, autorizzati dal Ministero dei Trasporti, con frequenza obbligatoria e <strong>senza esame finale</strong>.
+                </p>
+</div>
+<!-- Comparative Metric Boxes -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1 lg:max-w-lg">
+<div class="p-4 rounded-lg bg-slate-surface border border-surface-border flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-label-caps text-label-caps uppercase font-bold">Patenti A &amp; B</span>
+<span class="font-headline-sm text-headline-sm font-bold text-electric-blue">+6 PUNTI</span>
+</div>
+<div class="font-body-sm text-body-sm text-brand-navy-dark">Durata corso: <strong>12 ore</strong> di teoria con orari pomeridiani/serali.</div>
+</div>
+<div class="text-[12px] text-outline mt-2 pt-2 border-t border-surface-border">Massimo 2 ore al giorno</div>
+</div>
+<div class="p-4 rounded-lg bg-slate-surface border border-surface-border flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-label-caps text-label-caps uppercase font-bold">Superiori &amp; CQC</span>
+<span class="font-headline-sm text-headline-sm font-bold text-amber-highlight">+9 PUNTI</span>
+</div>
+<div class="font-body-sm text-body-sm text-brand-navy-dark">Durata corso: <strong>18 ore</strong> con moduli specialistici di sicurezza.</div>
+</div>
+<div class="text-[12px] text-outline mt-2 pt-2 border-t border-surface-border">Per titolari C, D, CQC</div>
+</div>
+</div>
+<!-- Action Link -->
+<div class="flex flex-col sm:flex-row lg:flex-col gap-2">
+<a class="px-6 py-3 bg-brand-navy-dark text-white rounded-lg font-label-md text-label-md text-center hover:bg-primary-container active:scale-[0.98] transition-all" href="recupero-punti.html">
+                  Verifica Saldo Punti
+                </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== VALUE PROPOSITIONS SECTION ==================== -->
+<section class="py-14 bg-surface-container-lowest border-y border-surface-border">
+<div class="max-w-[1240px] mx-auto px-6">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider font-semibold">Standard di Eccellenza</span>
+<h2 class="font-headline-lg text-headline-lg text-brand-navy-dark mt-2 mb-3">
+            Perché scegliere Autoscuola DS
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Oltre 40 anni di leadership nella formazione stradale a Ciampino e Castelli Romani.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Pillar 1 -->
+<div class="p-6 rounded-xl bg-slate-surface border border-surface-border flex flex-col items-start hover:border-surface-border-strong transition-all">
+<div class="w-12 h-12 rounded-lg bg-brand-navy-dark text-amber-highlight flex items-center justify-center mb-5 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">workspace_premium</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark mb-2">Istruttori Qualificati</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Insegnanti e istruttori abilitati con decenni di esperienza didattica, dedicati a garantire la massima percentuale di promossi al primo tentativo.
+            </p>
+</div>
+<!-- Pillar 2 -->
+<div class="p-6 rounded-xl bg-slate-surface border border-surface-border flex flex-col items-start hover:border-surface-border-strong transition-all">
+<div class="w-12 h-12 rounded-lg bg-brand-navy-dark text-amber-highlight flex items-center justify-center mb-5 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">electric_car</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark mb-2">Veicoli Moderni&nbsp;</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Flotta rinnovata costantemente con veicoli conformi alle ultime normative di sicurezza attiva, sensori di parcheggio e frenata d'emergenza assistita.
+            </p>
+</div>
+<!-- Pillar 3 -->
+<div class="p-6 rounded-xl bg-slate-surface border border-surface-border flex flex-col items-start hover:border-surface-border-strong transition-all">
+<div class="w-12 h-12 rounded-lg bg-brand-navy-dark text-amber-highlight flex items-center justify-center mb-5 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">calendar_month</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark mb-2">Orari Flessibili &amp; Esami in Sede</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Corsi teorici mattutini e serali con possibilità di recupero online, oltre a sedute di esame pratico svolte direttamente dal nostro centro di Ciampino.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== LEAD & CONTACT STRIP ==================== -->
+<section class="py-16 md:py-20 bg-slate-surface" id="iscrizione">
+<div class="max-w-[1240px] mx-auto px-6">
+<div class="bg-surface-container-lowest rounded-2xl border border-surface-border p-8 md:p-12 shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-7">
+<span class="font-label-caps text-label-caps text-electric-blue uppercase tracking-wider font-bold">Iscrizioni &amp; Preventivi</span>
+<h2 class="font-headline-lg text-headline-lg text-brand-navy-dark mt-2 mb-3">
+                Inizia il tuo percorso con noi oggi stesso
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                Compila il modulo per ricevere la tabella dettagliata dei costi, gli orari delle lezioni e le date delle prossime sessioni d'esame. Nessun impegno.
+              </p>
+<div class="flex flex-wrap gap-6 font-body-sm text-body-sm text-brand-navy-dark">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-success-green text-[20px]">check_circle</span>
+<span class="">Pagamenti rateizzabili a tasso zero</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-success-green text-[20px]">check_circle</span>
+<span class="">Pratiche burocratiche gestite in sede</span>
+</div>
+</div>
+</div>
+<!-- Interactive Quick Form -->
+<div class="lg:col-span-5 bg-slate-surface p-6 rounded-xl border border-surface-border">
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('Grazie per la richiesta! Il nostro ufficio ti ricontatterà entro 24 ore.');">
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-1">Nome e Cognome</label>
+<input class="w-full h-[46px] px-3.5 rounded-lg border border-surface-border-strong bg-white text-body-md text-brand-navy-dark focus:border-electric-blue focus:outline-none focus:ring-2 focus:ring-electric-blue/15" placeholder="Mario Rossi" required="" type="text">
+</div>
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-1">Telefono</label>
+<input class="w-full h-[46px] px-3.5 rounded-lg border border-surface-border-strong bg-white text-body-md text-brand-navy-dark focus:border-electric-blue focus:outline-none focus:ring-2 focus:ring-electric-blue/15" placeholder="340 1234567" required="" type="tel">
+</div>
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark mb-1">Corso di interesse</label>
+<select class="w-full h-[46px] px-3.5 rounded-lg border border-surface-border-strong bg-white text-body-md text-brand-navy-dark focus:border-electric-blue focus:outline-none focus:ring-2 focus:ring-electric-blue/15">
+<option>Patente B (Auto)</option>
+<option>Patenti A (Moto - A1/A2/A)</option>
+<option>CQC Merci / Persone</option>
+<option>Patenti Superiori (C, D, E)</option>
+<option>Recupero Punti Patente</option>
+<option>Rinnovo o Duplicato Patente</option>
+</select>
+</div>
+<button class="w-full h-[46px] bg-primary-container text-white font-label-md text-label-md font-semibold rounded-lg hover:bg-brand-navy-dark active:scale-[0.98] transition-all duration-150" type="submit">
+                  Richiedi Informazioni Gratuite
+                </button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ==================== FOOTER (SHARED COMPONENT) ==================== -->
+<footer class="bg-brand-navy-dark text-white border-t border-brand-navy-surface">
+<div class="max-w-[1240px] mx-auto px-6 py-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-10">
+<!-- Corporate Column -->
+<div class="md:col-span-5">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-9 h-9 rounded bg-brand-navy-surface border border-white/10 flex items-center justify-center font-bold text-amber-highlight">
+              DS
+            </div>
+<span class="font-headline-lg text-headline-lg text-white font-bold">AUTOSCUOLA DS</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline-variant max-w-sm mb-4">
+            Autoscuola e Agenzia Pratiche Auto di Aldo Di Stadio. Centro di istruzione per automobilisti, motociclisti e conducenti professionali dal 1980.
+          </p>
+<div class="text-body-sm font-body-sm text-outline-variant space-y-1">
+<div class=""><strong class="text-white">P.IVA:</strong> 01234567890</div>
+<div class=""><strong class="text-white">Sede:</strong> Via Palermo 2/D - 00043 Ciampino (RM)</div>
+</div>
+</div>
+<!-- Links Column 1: Corsi -->
+<div class="md:col-span-4">
+<h4 class="font-headline-sm text-headline-sm text-white mb-4">Offerta Formativa</h4>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li class=""><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="patente-b.html">Patente A &amp; B</a></li>
+<li class=""><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="patenti-superiori.html">Patenti Superiori C/D/E</a></li>
+<li class=""><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="cqc.html">CQC Merci e Persone</a></li>
+<li class=""><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="recupero-punti.html">Recupero Punti</a></li>
+<li class=""><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="documenti.html">Rinnovo Patente con Medico in Sede</a></li>
+</ul>
+</div>
+<!-- Contact Column -->
+<div class="md:col-span-3">
+<h4 class="font-headline-sm text-headline-sm text-white mb-4">Contatti Diretti</h4>
+<ul class="space-y-3 font-body-sm text-body-sm text-outline-variant">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-amber-highlight">call</span>
+<div>
+<a class="hover:text-white transition-colors" href="tel:067960806">06 / 7960806</a>
+<span class="block text-xs text-outline">Lun - Ven: 09:00-13:00 / 15:30-19:30</span>
+</div>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-amber-highlight">mail</span>
+<a class="hover:text-white transition-colors break-all" href="mailto:autoscuolads.ciampino@gmail.com">
+                autoscuolads.ciampino@gmail.com
+              </a>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-amber-highlight">location_on</span>
+<span class="">Ciampino (Roma) a due passi dalla stazione</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Legal Bottom Sub-bar -->
+<div class="pt-8 border-t border-brand-navy-surface flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-outline-variant">
+<div class="">
+          © 2025 Autoscuola DS di Aldo Di Stadio - P.IVA 01234567890 - Tutti i diritti riservati
+        </div>
+<div class="flex items-center space-x-6">
+<a class="hover:text-white transition-colors" href="privacy.html">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="privacy.html">Cookie Policy</a>
+<a class="hover:text-white transition-colors" href="mappa-sito.html">Mappa del Sito</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Vanilla JS for Micro-Interactions (Filtering) -->
+<script>
+    function filterCourses(category) {
+      // Button states
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-filter') === category) {
+          btn.className = 'filter-btn active-filter px-4 py-2 rounded-full text-label-md font-label-md bg-brand-navy-dark text-white border border-brand-navy-dark shadow-sm transition-all duration-150';
+        } else {
+          btn.className = 'filter-btn px-4 py-2 rounded-full text-label-md font-label-md bg-surface-container-lowest text-on-surface-variant border border-surface-border hover:border-surface-border-strong hover:text-brand-navy-dark transition-all duration-150';
+        }
+      });
+
+      // Card visibility filtering
+      const cards = document.querySelectorAll('.course-card');
+      cards.forEach(card => {
+        const cardCat = card.getAttribute('data-category');
+        if (category === 'all' || cardCat === category) {
+          card.style.display = '';
+          card.classList.remove('opacity-0', 'scale-95');
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+
+
+
+</body></html>

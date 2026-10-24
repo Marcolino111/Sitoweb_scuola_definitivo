@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+
+<html class="light" lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Recupero Punti Patente e CQC - Autoscuola DS di Aldo Di Stadio (Ciampino)</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary-container": "#ef9900",
+            "outline-variant": "#c5c5d3",
+            "surface-variant": "#dae2fd",
+            "error": "#ba1a1a",
+            "amber-highlight": "#F59E0B",
+            "surface-tint": "#4059aa",
+            "slate-surface": "#F8FAFC",
+            "on-tertiary-fixed-variant": "#653e00",
+            "primary-fixed-dim": "#b6c4ff",
+            "inverse-surface": "#283044",
+            "inverse-primary": "#b6c4ff",
+            "on-tertiary": "#ffffff",
+            "tertiary": "#3e2400",
+            "amber-subtle": "#FEF3C7",
+            "brand-navy-dark": "#0F172A",
+            "secondary-container": "#5bb8fe",
+            "on-error-container": "#93000a",
+            "brand-navy-surface": "#1E293B",
+            "error-container": "#ffdad6",
+            "primary-fixed": "#dce1ff",
+            "on-primary": "#ffffff",
+            "secondary": "#006398",
+            "on-surface-variant": "#444651",
+            "on-error": "#ffffff",
+            "on-primary-fixed": "#00164e",
+            "background": "#faf8ff",
+            "surface-border": "#E2E8F0",
+            "surface-border-strong": "#CBD5E1",
+            "secondary-fixed-dim": "#93ccff",
+            "success-green": "#10B981",
+            "primary-container": "#1e3a8a",
+            "on-tertiary-fixed": "#2a1700",
+            "on-secondary-container": "#00476e",
+            "surface-container-low": "#f2f3ff",
+            "secondary-fixed": "#cce5ff",
+            "on-surface": "#131b2e",
+            "surface-container-highest": "#dae2fd",
+            "tertiary-fixed": "#ffddb8",
+            "surface": "#faf8ff",
+            "tertiary-fixed-dim": "#ffb95f",
+            "primary": "#00236f",
+            "outline": "#757682",
+            "surface-container-lowest": "#ffffff",
+            "inverse-on-surface": "#eef0ff",
+            "surface-dim": "#d2d9f4",
+            "critical-surface": "#FEE2E2",
+            "on-primary-fixed-variant": "#264191",
+            "electric-blue": "#2563EB",
+            "surface-container-high": "#e2e7ff",
+            "on-secondary-fixed-variant": "#004b73",
+            "tertiary-container": "#5c3800",
+            "on-secondary-fixed": "#001d31",
+            "on-primary-container": "#90a8ff",
+            "on-background": "#131b2e",
+            "surface-bright": "#faf8ff",
+            "critical-red": "#EF4444",
+            "surface-container": "#eaedff",
+            "on-secondary": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-3xl": "6rem",
+            "gutter-mobile": "1rem",
+            "gutter": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "margin": "1.5rem",
+            "space-lg": "1.5rem",
+            "margin-mobile": "1rem",
+            "space-2xl": "4rem",
+            "space-md": "1rem"
+          },
+          "fontFamily": {
+            "display-hero": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Inter"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Inter"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "label-caps": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Inter"]
+          },
+          "fontSize": {
+            "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "800" }],
+            "display-hero-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-surface text-on-surface antialiased min-h-screen flex flex-col font-body-md text-body-md">
+<!-- TOP NAVIGATION BAR (Shared Component Execution) -->
+<header class="bg-surface-container-lowest/95 dark:bg-brand-navy-dark/95 backdrop-blur-md border-b border-surface-border dark:border-brand-navy-surface shadow-sm docked full-width top-0 z-50 h-[72px] sticky">
+<div class="max-w-[1240px] mx-auto px-6 flex items-center justify-between h-full">
+<!-- Brand Logo -->
+<a class="flex items-center gap-3 active:scale-[0.98] transition-transform duration-150 ease-out" href="#">
+<div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-[24px]">directions_car</span>
+</div>
+<span class="font-headline-md text-headline-md font-bold tracking-tight text-brand-navy-dark dark:text-surface-bright">
+          AUTOSCUOLA DS
+        </span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-outline-variant hover:text-brand-navy-dark dark:hover:text-surface-bright transition-colors pb-1" href="#">
+          Corsi
+        </a>
+<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-outline-variant hover:text-brand-navy-dark dark:hover:text-surface-bright transition-colors pb-1" href="#">
+          Patenti Superiori
+        </a>
+<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-outline-variant hover:text-brand-navy-dark dark:hover:text-surface-bright transition-colors pb-1" href="#">
+          CQC Professionale
+        </a>
+<!-- ACTIVE MATCH FROM JSON: "Recupero Punti" -->
+<a class="font-label-lg text-label-lg text-brand-navy-dark dark:text-surface-bright font-semibold border-b-2 border-electric-blue pb-1" href="#">
+          Recupero Punti
+        </a>
+<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-outline-variant hover:text-brand-navy-dark dark:hover:text-surface-bright transition-colors pb-1" href="#">
+          Blog
+        </a>
+<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-outline-variant hover:text-brand-navy-dark dark:hover:text-surface-bright transition-colors pb-1" href="#">
+          Contatti
+        </a>
+</nav>
+<!-- Action Cluster -->
+<div class="flex items-center gap-4">
+<a class="hidden lg:flex items-center gap-2 text-on-surface font-label-md text-label-md px-3 py-2 rounded-lg hover:bg-slate-surface transition-colors active:scale-[0.98]" href="tel:+39067910123">
+<span class="material-symbols-outlined text-[20px] text-electric-blue">call</span>
+<span>Chiama Ora</span>
+</a>
+<a class="bg-primary text-on-primary font-label-md text-label-md h-[44px] px-5 rounded-lg flex items-center justify-center hover:bg-brand-navy-dark transition-all duration-150 active:scale-[0.98] shadow-sm" href="#iscrizione">
+          Iscriviti Online
+        </a>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- HERO SECTION -->
+<section class="relative bg-surface-container-lowest border-b border-surface-border overflow-hidden pt-12 pb-16 lg:py-20">
+<!-- Ambient background visual elements -->
+<div class="absolute inset-0 bg-gradient-to-b from-surface-container-low/40 to-transparent pointer-events-none"></div>
+<div class="max-w-[1240px] mx-auto px-6 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-6">
+<!-- Rassicurante Alert Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-subtle border border-amber-highlight/30 text-tertiary">
+<span class="material-symbols-outlined text-[18px] text-amber-highlight">verified_user</span>
+<span class="font-label-caps text-label-caps tracking-wider uppercase">
+                SALVAGUARDIA DELLA PATENTE • NESSUN ESAME FINALE
+              </span>
+</div>
+<h1 class="font-display-hero text-display-hero text-brand-navy-dark tracking-tight">
+              Corsi Recupero Punti Patente A, B e Professionali CQC
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              Proteggi il tuo titolo di guida e la tua professione prima di incorrere nella revisione forzata o nella sospensione. Presso la sede di <span class="font-semibold text-brand-navy-dark">Ciampino</span> ripristini i tuoi punti con la <span class="font-semibold text-brand-navy-dark">sola frequenza certificata in aula</span> e accredito automatico sul Portale dell'Automobilista.
+            </p>
+<!-- Key Feature List -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+<div class="flex items-center gap-3 p-3.5 bg-slate-surface rounded-xl border border-surface-border">
+<span class="material-symbols-outlined text-success-green text-[22px]">check_circle</span>
+<span class="font-label-md text-label-md text-brand-navy-dark">Zero Esami o Quiz Ministeriali</span>
+</div>
+<div class="flex items-center gap-3 p-3.5 bg-slate-surface rounded-xl border border-surface-border">
+<span class="material-symbols-outlined text-electric-blue text-[22px]">bolt</span>
+<span class="font-label-md text-label-md text-brand-navy-dark">Riaccredito Diretto Ministeriale</span>
+</div>
+<div class="flex items-center gap-3 p-3.5 bg-slate-surface rounded-xl border border-surface-border">
+<span class="material-symbols-outlined text-electric-blue text-[22px]">schedule</span>
+<span class="font-label-md text-label-md text-brand-navy-dark">Orari Flessibili Pomeridiani e Serali</span>
+</div>
+<div class="flex items-center gap-3 p-3.5 bg-slate-surface rounded-xl border border-surface-border">
+<span class="material-symbols-outlined text-success-green text-[22px]">location_on</span>
+<span class="font-label-md text-label-md text-brand-navy-dark">Sede Accreditata a Ciampino (RM)</span>
+</div>
+</div>
+<!-- CTA Actions -->
+<div class="flex flex-wrap items-center gap-4 pt-4">
+<a class="bg-amber-highlight hover:bg-on-tertiary-container text-brand-navy-dark font-label-lg text-label-lg font-bold px-7 h-[48px] rounded-lg inline-flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.98]" href="#iscrizione">
+<span>Prenota Recupero Punti</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<a class="border border-surface-border-strong bg-surface-container-lowest hover:bg-slate-surface text-brand-navy-dark font-label-lg text-label-lg px-6 h-[48px] rounded-lg inline-flex items-center justify-center transition-all active:scale-[0.98]" href="#calendario">
+                Vedi Calendario Prossimi Corsi
+              </a>
+</div>
+</div>
+<!-- Hero Graphic Card / Visual Bento Accent -->
+<div class="lg:col-span-5">
+<div class="bg-surface-container-lowest rounded-2xl border border-surface-border p-6 shadow-sm relative">
+<div class="relative rounded-xl overflow-hidden mb-6 aspect-video">
+<img class="w-full h-full object-cover" data-alt="A modern driving academy classroom in central Italy with instructor at a smart screen, pristine daylighting, confident professional adult students learning transport regulations, modern navy and amber interior touches in contemporary automotive style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi4DBFtxh8WoQkiOc-0xEra86bgbXNRbBl2eN5kJTrBNiKTplX3IrHmyNfHPYw2mLmIjj8OxmvMzh0qqIdSuSPDHFkrgMMROjT_VG5z5ZSfGndDa0VUw5KOj5Zyxj7DwS2EVqhaRN-NxdjHl7xOFvP-H6UHuRZQXXpBhox6PMGKxM1B8IN8DcUatSGkIEFBjta6611GL77RitfwuOsGiyQtY6AWvrCtdnNsJol6Zy0p-6c_Old6OeU4w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-brand-navy-dark/70 via-transparent to-transparent flex items-end p-4">
+<span class="text-surface-container-lowest font-label-md text-label-md flex items-center gap-2">
+<span class="material-symbols-outlined text-amber-highlight text-[18px]">verified</span>
+                    Autoscuola DS - Direzione Didattica Aldo Di Stadio
+                  </span>
+</div>
+</div>
+<!-- Live Status Pill Box -->
+<div class="bg-slate-surface border border-surface-border rounded-xl p-4 space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Stato Corsi Sede Ciampino</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
+<span class="w-2 h-2 rounded-full bg-success-green animate-pulse"></span>
+                    Iscrizioni Aperte
+                  </span>
+</div>
+<div class="flex justify-between items-baseline border-t border-surface-border pt-3">
+<span class="font-body-md text-body-md text-on-surface-variant">Prossimo avvio:</span>
+<span class="font-headline-sm text-headline-sm font-bold text-brand-navy-dark">Lunedì 10 Marzo 2025</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Posti aula rimasti:</span>
+<span class="font-label-md text-label-md text-critical-red font-bold">Ultimi 4 posti disponibili</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: LE DUE CATEGORIE DI CORSI (Bento Style Grid) -->
+<section class="py-16 lg:py-20 bg-slate-surface">
+<div class="max-w-[1240px] mx-auto px-6">
+<div class="max-w-2xl mb-12">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-electric-blue font-label-caps text-label-caps uppercase tracking-wider mb-3">
+            Programmi Certificati
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-brand-navy-dark tracking-tight">
+            Le Due Tipologie di Corsi di Recupero Punti
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Percorsi distinti per conducenti privati e professionisti del trasporto su strada, conformi al Codice della Strada.
+          </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Card 1: Patenti A e B (Desktop 6 col) -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-2xl border border-surface-border p-8 shadow-sm flex flex-col justify-between hover:border-surface-border-strong hover:-translate-y-0.5 transition-all duration-200">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-3 py-1 rounded-full bg-blue-50 text-electric-blue border border-blue-200 font-label-caps text-label-caps tracking-wider uppercase font-bold">
+                  PATENTE A &amp; B
+                </span>
+<div class="flex items-center gap-1 text-success-green font-headline-sm text-headline-sm font-bold">
+<span class="material-symbols-outlined text-[24px]">add_circle</span>
+<span>Fino a +6 PUNTI</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-brand-navy-dark mb-3">
+                Corso Recupero per Autoveicoli e Motoveicoli
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                Dedicato a chi guida per esigenze personali o quotidiane. Permette di recuperare fino a 6 punti persi a seguito di infrazioni, scongiurando il rischio di azzeramento totale.
+              </p>
+<div class="space-y-3 bg-slate-surface p-4 rounded-xl border border-surface-border mb-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-brand-navy-dark text-[20px]">timelapse</span>
+<span class="font-body-md text-body-md text-brand-navy-dark"><strong class="font-semibold">Durata complessiva:</strong> 12 Ore di teoria in aula</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-brand-navy-dark text-[20px]">pace</span>
+<span class="font-body-md text-body-md text-brand-navy-dark"><strong class="font-semibold">Frequenza:</strong> Massimo 2 ore di lezione al giorno</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-brand-navy-dark text-[20px]">event_available</span>
+<span class="font-body-md text-body-md text-brand-navy-dark"><strong class="font-semibold">Completamento:</strong> 6 incontri in 2 settimane</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-success-green text-[20px]">fact_check</span>
+<span class="font-body-md text-body-md text-success-green font-semibold">Nessun esame teorico ministeriale finale</span>
+</div>
+</div>
+</div>
+<div class="pt-4 border-t border-surface-border flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Attivo ogni due settimane</span>
+<a class="inline-flex items-center gap-1 text-electric-blue hover:text-primary font-label-md text-label-md font-semibold" href="#iscrizione">
+<span>Riserva Posto Patente B</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Card 2: Patenti Superiori C/D/E & CQC (Desktop 6 col) -->
+<div class="lg:col-span-6 bg-brand-navy-dark rounded-2xl border border-brand-navy-surface p-8 shadow-sm flex flex-col justify-between text-surface-container-lowest">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-3 py-1 rounded-full bg-amber-subtle text-tertiary border border-amber-highlight/40 font-label-caps text-label-caps tracking-wider uppercase font-bold">
+                  PROFESSIONALE C, D, E &amp; CQC
+                </span>
+<div class="flex items-center gap-1 text-amber-highlight font-headline-sm text-headline-sm font-bold">
+<span class="material-symbols-outlined text-[24px]">add_circle</span>
+<span>Fino a +9 PUNTI</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest mb-3">
+                Corso Professionale Autotrasporto Merci &amp; Persone
+              </h3>
+<p class="font-body-md text-body-md text-outline-variant mb-6">
+                Progettato specificamente per autisti di camion, autobus e titolari di CQC Merci e Persone. Salva il tuo strumento primario di reddito e continuità aziendale.
+              </p>
+<div class="space-y-3 bg-brand-navy-surface p-4 rounded-xl border border-slate-700 mb-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-amber-highlight text-[20px]">timelapse</span>
+<span class="font-body-md text-body-md text-surface-container-lowest"><strong class="font-semibold text-white">Durata complessiva:</strong> 18 Ore di teoria in aula</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-amber-highlight text-[20px]">schedule</span>
+<span class="font-body-md text-body-md text-surface-container-lowest"><strong class="font-semibold text-white">Frequenza oraria:</strong> Moduli serali o sabato concordati</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-amber-highlight text-[20px]">assignment_turned_in</span>
+<span class="font-body-md text-body-md text-surface-container-lowest"><strong class="font-semibold text-white">Applicabilità:</strong> Recupero punti Patente o Carta CQC</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-success-green text-[20px]">check_circle</span>
+<span class="font-body-md text-body-md text-emerald-400 font-semibold">SENZA ESAME: Basta la sola presenza certificata</span>
+</div>
+</div>
+</div>
+<div class="pt-4 border-t border-slate-700 flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline-variant">Pronta riattivazione al Portale</span>
+<a class="inline-flex items-center gap-1 text-amber-highlight hover:text-amber-300 font-label-md text-label-md font-bold" href="#iscrizione">
+<span>Riserva Posto CQC / Superiori</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Clarification Banner -->
+<div class="mt-8 bg-surface-container-lowest rounded-xl border border-surface-border p-5 flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-amber-subtle text-amber-highlight flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">verified</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-brand-navy-dark font-bold">
+                SENZA ESAME FINALE: basta la frequenza certificata
+              </h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Non dovrai sostenere prove d'esame. È sufficiente frequentare regolarmente le ore stabilite senza superare il limite massimo di assenze consentito per legge (4 ore per Patente B, 6 ore per CQC).
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: COME FUNZIONA IL RECUPERO PUNTI (Step-by-step) -->
+<section class="py-16 lg:py-20 bg-surface-container-lowest border-y border-surface-border">
+<div class="max-w-[1240px] mx-auto px-6">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="font-label-caps text-label-caps text-electric-blue uppercase tracking-widest block mb-2 font-bold">
+            Procedura Semplificata e Sicura
+          </span>
+<h2 class="font-display-hero text-headline-lg text-brand-navy-dark tracking-tight">
+            Come Funziona la Perdita e il Recupero Punti
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-3">
+            Dalla notifica della decurtazione fino al ripristino effettivo sul saldo patente: ecco i 4 passi guidati dal team dell'Autoscuola DS.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+<!-- Step 1 -->
+<div class="bg-slate-surface rounded-xl border border-surface-border p-6 relative flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-primary text-surface-container-lowest flex items-center justify-center font-headline-md text-headline-md font-bold mb-4">
+                1
+              </div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark mb-2 font-bold">
+                Verifica Saldo Punti
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Controlla il tuo saldo reale tramite il <em>Portale dell'Automobilista</em>, l'app iPatente oppure chiamando il numero verde 848.782.782. Se hai dubbi, lo verifichiamo noi gratuitamente a Ciampino.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-border text-xs text-outline flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">info</span>
+              Saldo visibile in tempo reale
+            </div>
+</div>
+<!-- Step 2 -->
+<div class="bg-slate-surface rounded-xl border border-surface-border p-6 relative flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-electric-blue text-surface-container-lowest flex items-center justify-center font-headline-md text-headline-md font-bold mb-4">
+                2
+              </div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark mb-2 font-bold">
+                Lettera o Comunicazione
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Ricezione della comunicazione di decurtazione da parte del Dipartimento Trasporti Terrestri, oppure stampa dell'estratto cronologico punti aggiornato.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-border text-xs text-outline flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+              Requisito obbligatorio d'iscrizione
+            </div>
+</div>
+<!-- Step 3 -->
+<div class="bg-slate-surface rounded-xl border border-surface-border p-6 relative flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-amber-highlight text-brand-navy-dark flex items-center justify-center font-headline-md text-headline-md font-bold mb-4">
+                3
+              </div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark mb-2 font-bold">
+                Iscrizione Immediata
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Inserimento nel primo ciclo disponibile a Ciampino. Frequenti le lezioni secondo il calendario prescelto senza sovrapposizioni con i tuoi turni di lavoro o impegni.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-border text-xs text-outline flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">school</span>
+              Docenti abilitati dal Ministero
+            </div>
+</div>
+<!-- Step 4 -->
+<div class="bg-slate-surface rounded-xl border border-surface-border p-6 relative flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-success-green text-surface-container-lowest flex items-center justify-center font-headline-md text-headline-md font-bold mb-4">
+                4
+              </div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark mb-2 font-bold">
+                Riaccredito Automatico
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Rilascio dell'attestato ufficiale di frequenza e comunicazione telematica immediata da parte di Autoscuola DS alla Motorizzazione. I punti ricompaiono sulla tua patente.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-border text-xs text-success-green font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+              Pratica chiusa con successo
+            </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: CALENDARIO SESSIONI A CIAMPINO -->
+<section class="py-16 lg:py-20 bg-slate-surface" id="calendario">
+<div class="max-w-[1240px] mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-electric-blue font-label-caps text-label-caps uppercase tracking-wider mb-3">
+              Flessibilità &amp; Continuità
+            </div>
+<h2 class="font-headline-lg text-headline-lg text-brand-navy-dark tracking-tight">
+              Calendario Corsi e Sessioni Mensili a Ciampino
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-2">
+              Attiviamo sessioni ogni due settimane per evitare l'azzeramento totale del punteggio e il rischio di revisione forzata. Scegli la fascia oraria ideale per te.
+            </p>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-lowest border border-surface-border p-2 rounded-xl">
+<span class="material-symbols-outlined text-amber-highlight">location_on</span>
+<span class="font-label-md text-label-md text-brand-navy-dark font-medium">Sede: Viale di Ciampino, Roma</span>
+</div>
+</div>
+<!-- Schedule Grid Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Ciclo 1 -->
+<div class="bg-surface-container-lowest rounded-2xl border border-surface-border p-6 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between pb-4 border-b border-surface-border mb-4">
+<span class="font-label-caps text-label-caps text-electric-blue uppercase font-bold tracking-wider">CICLO MARZO A</span>
+<span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">In Partenza</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark font-bold mb-2">
+                Turno Pomeridiano
+              </h3>
+<p class="text-xs text-on-surface-variant mb-4">Ideale per studenti e lavoratori con turni mattutini.</p>
+<div class="space-y-2.5 text-sm text-brand-navy-dark mb-6">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Inizio:</span>
+<span class="font-semibold">Lunedì 10 Marzo 2025</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Orari lezioni:</span>
+<span class="font-semibold">17:00 - 19:00 (Lun - Mer - Ven)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Corso abilitato:</span>
+<span class="font-semibold">Patente A e B (+6 pt)</span>
+</div>
+</div>
+</div>
+<a class="w-full h-11 rounded-lg bg-slate-surface hover:bg-surface-border text-brand-navy-dark font-label-md text-label-md font-semibold flex items-center justify-center border border-surface-border transition-colors" href="#iscrizione">
+              Blocca il tuo posto
+            </a>
+</div>
+<!-- Ciclo 2 -->
+<div class="bg-surface-container-lowest rounded-2xl border-2 border-electric-blue p-6 shadow-sm flex flex-col justify-between relative hover:shadow-md transition-shadow">
+<div class="absolute -top-3.5 right-6 px-3 py-0.5 rounded-full bg-electric-blue text-surface-container-lowest font-label-caps text-label-caps uppercase font-bold">
+              PIÙ RICHIESTO
+            </div>
+<div>
+<div class="flex items-center justify-between pb-4 border-b border-surface-border mb-4">
+<span class="font-label-caps text-label-caps text-electric-blue uppercase font-bold tracking-wider">CICLO MARZO B</span>
+<span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-100 text-amber-800">4 Posti Rimasti</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark font-bold mb-2">
+                Turno Serale Professionale
+              </h3>
+<p class="text-xs text-on-surface-variant mb-4">Perfetto per autisti e professionisti a fine turno lavorativo.</p>
+<div class="space-y-2.5 text-sm text-brand-navy-dark mb-6">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Inizio:</span>
+<span class="font-semibold">Lunedì 24 Marzo 2025</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Orari lezioni:</span>
+<span class="font-semibold">19:30 - 21:30 (Flessibile)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Corso abilitato:</span>
+<span class="font-semibold">Patenti C, D, E e CQC (+9 pt)</span>
+</div>
+</div>
+</div>
+<a class="w-full h-11 rounded-lg bg-electric-blue hover:bg-primary text-surface-container-lowest font-label-md text-label-md font-semibold flex items-center justify-center transition-colors" href="#iscrizione">
+              Iscriviti a questo turno
+            </a>
+</div>
+<!-- Ciclo 3 -->
+<div class="bg-surface-container-lowest rounded-2xl border border-surface-border p-6 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between pb-4 border-b border-surface-border mb-4">
+<span class="font-label-caps text-label-caps text-electric-blue uppercase font-bold tracking-wider">CICLO APRILE A</span>
+<span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-700">Pre-Iscrizione</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark font-bold mb-2">
+                Turno Weekend &amp; Misto
+              </h3>
+<p class="text-xs text-on-surface-variant mb-4">Soluzione combinata venerdì e sabato mattina.</p>
+<div class="space-y-2.5 text-sm text-brand-navy-dark mb-6">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Inizio:</span>
+<span class="font-semibold">Venerdì 11 Aprile 2025</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Orari lezioni:</span>
+<span class="font-semibold">Ven 18:30-20:30 / Sab 09:00-11:00</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Corso abilitato:</span>
+<span class="font-semibold">Tutte le categorie</span>
+</div>
+</div>
+</div>
+<a class="w-full h-11 rounded-lg bg-slate-surface hover:bg-surface-border text-brand-navy-dark font-label-md text-label-md font-semibold flex items-center justify-center border border-surface-border transition-colors" href="#iscrizione">
+              Richiedi Informazioni
+            </a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: DOMANDE FREQUENTI (FAQ) -->
+<section class="py-16 lg:py-20 bg-surface-container-lowest border-y border-surface-border">
+<div class="max-w-[1240px] mx-auto px-6">
+<div class="max-w-3xl mb-12">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-electric-blue font-label-caps text-label-caps uppercase tracking-wider mb-3">
+            Chiarezza &amp; Normativa
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-brand-navy-dark tracking-tight">
+            Domande Frequenti sul Recupero Punti
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Tutto ciò che serve sapere per non correre rischi con la Motorizzazione Civile e preservare la validità della patente.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- FAQ 1 -->
+<div class="p-6 rounded-2xl bg-slate-surface border border-surface-border">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-critical-red text-[28px] shrink-0">report_problem</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark font-bold mb-2">
+                  Cosa succede se arrivo a zero punti?
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                  Se il tuo saldo raggiunge quota zero, scatta d'ufficio la <strong>Revisione della Patente</strong> da parte della Motorizzazione Civile. Sarai costretto a sostenere nuovamente l'esame teorico e l'esame pratico di guida entro 30 giorni. Se non superi l'esame o non ti presenti, la patente viene definitivamente revocata. Il corso di recupero punti va frequentato <em>prima</em> che il saldo tocchi lo zero.
+                </p>
+</div>
+</div>
+</div>
+<!-- FAQ 2 -->
+<div class="p-6 rounded-2xl bg-slate-surface border border-surface-border">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-electric-blue text-[28px] shrink-0">quiz</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark font-bold mb-2">
+                  Si possono recuperare più di 20 o 30 punti?
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                  No. Con i corsi di recupero puoi ripristinare fino a un massimo di 20 punti complessivi. Il punteggio totale della patente non può mai superare i 20 punti a seguito di un corso di recupero (la soglia massima di 30 punti è raggiungibile solo tramite i crediti di buona condotta biennali senza infrazioni).
+                </p>
+</div>
+</div>
+</div>
+<!-- FAQ 3 -->
+<div class="p-6 rounded-2xl bg-slate-surface border border-surface-border">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-success-green text-[28px] shrink-0">person_check</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark font-bold mb-2">
+                  Chi può partecipare al corso di recupero punti?
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                  Può iscriversi qualsiasi titolare di patente di guida o cantiere CQC che abbia subito una decurtazione certificata (saldo inferiore a 20) e che abbia almeno 1 punto residuo. È necessario esibire la lettera del Ministero oppure la stampa dell'estratto punti ricavata dal Portale dell'Automobilista.
+                </p>
+</div>
+</div>
+</div>
+<!-- FAQ 4 -->
+<div class="p-6 rounded-2xl bg-slate-surface border border-surface-border">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-amber-highlight text-[28px] shrink-0">rule</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark font-bold mb-2">
+                  Quante assenze sono consentite durante le lezioni?
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                  La legge consente un massimo di <strong>4 ore di assenza</strong> per il corso Patente B (12 ore totali) e fino a <strong>6 ore</strong> per il corso Patenti Superiori/CQC (18 ore totali). Le ore di assenza devono comunque essere recuperate tramite lezioni supplementari per ottenere l'attestato finale.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: FORM DI VERIFICA GRATUITA & ISCRIZIONE -->
+<section class="py-16 lg:py-24 bg-slate-surface" id="iscrizione">
+<div class="max-w-[1240px] mx-auto px-6">
+<div class="bg-surface-container-lowest rounded-3xl border border-surface-border shadow-sm p-8 lg:p-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Info Column -->
+<div class="lg:col-span-5 space-y-6">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-electric-blue font-label-caps text-label-caps uppercase tracking-wider">
+                Supporto Diretto Ciampino
+              </div>
+<h2 class="font-display-hero text-headline-lg text-brand-navy-dark tracking-tight">
+                Verifica Gratuita Punti e Iscrizione Immediata
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Compila il modulo con i tuoi dati: la nostra segreteria controllerà tempestivamente la tua posizione anagrafica ministeriale e ti riserverà il posto nel ciclo più comodo per i tuoi orari.
+              </p>
+<div class="space-y-4 pt-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-blue-50 text-electric-blue flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-brand-navy-dark font-bold">Assistenza Telefonica Sede</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">+39 06 7910123 / +39 347 1234567</div>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-blue-50 text-electric-blue flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-brand-navy-dark font-bold">Sede Operativa Accreditata</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Ciampino (Roma) • Orario: Lun - Ven 09:00 - 20:00</div>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-blue-50 text-electric-blue flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">security</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-brand-navy-dark font-bold">Trattamento Riservato</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">I dati inviati sono tutelati e usati solo per la visura ministeriale.</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Interactive Form -->
+<div class="lg:col-span-7 bg-slate-surface rounded-2xl border border-surface-border p-6 lg:p-8">
+<form class="space-y-5" onsubmit="event.preventDefault(); alert('Richiesta inviata con successo! Un nostro consulente ti contatterà entro 2 ore per confermare i dettagli del corso.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark font-semibold mb-1.5">Nome *</label>
+<input class="w-full h-[46px] px-3.5 bg-surface-container-lowest border border-surface-border-strong rounded-lg text-brand-navy-dark font-body-md text-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100 transition-all outline-none" placeholder="Mario" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark font-semibold mb-1.5">Cognome *</label>
+<input class="w-full h-[46px] px-3.5 bg-surface-container-lowest border border-surface-border-strong rounded-lg text-brand-navy-dark font-body-md text-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100 transition-all outline-none" placeholder="Rossi" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark font-semibold mb-1.5">Recapito Telefonico *</label>
+<input class="w-full h-[46px] px-3.5 bg-surface-container-lowest border border-surface-border-strong rounded-lg text-brand-navy-dark font-body-md text-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100 transition-all outline-none" placeholder="348 1234567" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark font-semibold mb-1.5">Email di Contatto</label>
+<input class="w-full h-[46px] px-3.5 bg-surface-container-lowest border border-surface-border-strong rounded-lg text-brand-navy-dark font-body-md text-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100 transition-all outline-none" placeholder="mario.rossi@email.it" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark font-semibold mb-1.5">Tipo di Patente Posseduta *</label>
+<select class="w-full h-[46px] px-3.5 bg-surface-container-lowest border border-surface-border-strong rounded-lg text-brand-navy-dark font-body-md text-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100 transition-all outline-none">
+<option value="B">Patente B (Auto)</option>
+<option value="A">Patente A / A2 / A1 (Moto)</option>
+<option value="C">Patente C / CE (Merci)</option>
+<option value="D">Patente D / DE (Persone)</option>
+<option value="CQC-M">CQC Merci</option>
+<option value="CQC-P">CQC Persone</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark font-semibold mb-1.5">Punti da Recuperare *</label>
+<select class="w-full h-[46px] px-3.5 bg-surface-container-lowest border border-surface-border-strong rounded-lg text-brand-navy-dark font-body-md text-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100 transition-all outline-none">
+<option value="6">+6 Punti (Corso Patenti A/B - 12 ore)</option>
+<option value="9">+9 Punti (Corso Professionali C/D/E/CQC - 18 ore)</option>
+<option value="CHECK">Non conosco il mio saldo (Verifica con voi)</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark font-semibold mb-1.5">Note o preferenze d'orario (Facoltativo)</label>
+<textarea class="w-full p-3.5 bg-surface-container-lowest border border-surface-border-strong rounded-lg text-brand-navy-dark font-body-md text-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100 transition-all outline-none" placeholder="Es. Preferisco la fascia serale dopo le 19:00 oppure sabato mattina..." rows="3"></textarea>
+</div>
+<div class="flex items-start gap-3">
+<input class="mt-1 w-4 h-4 rounded border-surface-border-strong text-primary focus:ring-electric-blue" id="privacy" required="" type="checkbox"/>
+<label class="text-xs text-on-surface-variant leading-tight" for="privacy">
+                    Accetto l'informativa sulla privacy e autorizzo Autoscuola DS al trattamento dei miei dati per la verifica del saldo punti patente.
+                  </label>
+</div>
+<button class="w-full h-[48px] bg-primary hover:bg-brand-navy-dark text-on-primary font-label-lg text-label-lg font-bold rounded-lg shadow-sm transition-all active:scale-[0.98] flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Invia Richiesta di Prenotazione</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component Execution) -->
+<footer class="bg-brand-navy-dark dark:bg-surface-container-lowest border-t border-brand-navy-surface dark:border-surface-border flat no shadows docked full-width bottom">
+<div class="max-w-[1240px] mx-auto px-6 py-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+<!-- Brand Info -->
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-surface-bright dark:text-brand-navy-dark">
+              AUTOSCUOLA DS
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-outline-variant max-w-sm">
+            Centro accreditato dal Ministero delle Infrastrutture e dei Trasporti per il conseguimento patenti, recupero punti, rinnovi con medico in sede e formazione specialistica CQC a Ciampino e Roma Sud.
+          </p>
+<div class="flex items-center gap-4 text-outline-variant">
+<span class="flex items-center gap-1.5 text-xs">
+<span class="material-symbols-outlined text-[16px] text-amber-highlight">verified</span>
+              Codice Autoscuola DTT RM/0942
+            </span>
+</div>
+</div>
+<!-- Links Col 1 -->
+<div>
+<h4 class="font-headline-sm text-headline-sm text-surface-bright dark:text-brand-navy-dark mb-4">
+            Corsi Patenti
+          </h4>
+<ul class="space-y-2.5">
+<li>
+<a class="font-label-md text-label-md text-outline-variant dark:text-on-surface-variant hover:text-amber-highlight dark:hover:text-amber-highlight transition-colors duration-150" href="#">
+                Patente A &amp; B
+              </a>
+</li>
+<li>
+<a class="font-label-md text-label-md text-outline-variant dark:text-on-surface-variant hover:text-amber-highlight dark:hover:text-amber-highlight transition-colors duration-150" href="#">
+                Patenti Superiori C/D/E
+              </a>
+</li>
+<li>
+<a class="font-label-md text-label-md text-outline-variant dark:text-on-surface-variant hover:text-amber-highlight dark:hover:text-amber-highlight transition-colors duration-150" href="#">
+                CQC Merci e Persone
+              </a>
+</li>
+</ul>
+</div>
+<!-- Links Col 2 -->
+<div>
+<h4 class="font-headline-sm text-headline-sm text-surface-bright dark:text-brand-navy-dark mb-4">
+            Servizi Conducenti
+          </h4>
+<ul class="space-y-2.5">
+<li>
+<a class="font-label-md text-label-md text-amber-highlight font-medium hover:text-amber-highlight transition-colors duration-150" href="#">
+                Recupero Punti
+              </a>
+</li>
+<li>
+<a class="font-label-md text-label-md text-outline-variant dark:text-on-surface-variant hover:text-amber-highlight dark:hover:text-amber-highlight transition-colors duration-150" href="#">
+                Rinnovo Patente
+              </a>
+</li>
+<li>
+<a class="font-label-md text-label-md text-outline-variant dark:text-on-surface-variant hover:text-amber-highlight dark:hover:text-amber-highlight transition-colors duration-150" href="#">
+                Mappa del Sito
+              </a>
+</li>
+</ul>
+</div>
+<!-- Legal Links Col 3 -->
+<div>
+<h4 class="font-headline-sm text-headline-sm text-surface-bright dark:text-brand-navy-dark mb-4">
+            Legale &amp; Note
+          </h4>
+<ul class="space-y-2.5">
+<li>
+<a class="font-label-md text-label-md text-outline-variant dark:text-on-surface-variant hover:text-amber-highlight dark:hover:text-amber-highlight transition-colors duration-150" href="#">
+                Privacy Policy
+              </a>
+</li>
+<li>
+<a class="font-label-md text-label-md text-outline-variant dark:text-on-surface-variant hover:text-amber-highlight dark:hover:text-amber-highlight transition-colors duration-150" href="#">
+                Cookie Policy
+              </a>
+</li>
+</ul>
+</div>
+</div>
+<!-- Footer Bottom Bar -->
+<div class="border-t border-brand-navy-surface dark:border-surface-border pt-8 flex flex-col md:flex-row items-center justify-between text-outline-variant text-xs gap-4">
+<p class="font-body-sm text-body-sm">
+          © 2025 Autoscuola DS di Aldo Di Stadio - P.IVA 01234567890 - Tutti i diritti riservati
+        </p>
+<div class="flex items-center gap-6">
+<span>Ciampino (Roma)</span>
+<span>Sede Centrale: Viale di Ciampino, 42</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

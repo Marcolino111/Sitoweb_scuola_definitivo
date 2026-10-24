@@ -1,0 +1,807 @@
+<!DOCTYPE html><html class="light" lang="it" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Caricamento Documenti | AUTOSCUOLA DS</title>
+<meta content="Carica la firma digitale e la fototessera per l'iscrizione e l'avvio della pratica all'Autoscuola DS. Procedura guidata e conforme alle norme ministeriali." name="description">
+<!-- Tailwind CSS v3 with Forms & Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Plus Jakarta Sans & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "success-green": "#10B981",
+            "electric-blue": "#2563EB",
+            "amber-highlight": "#F59E0B",
+            "inverse-on-surface": "#eef0ff",
+            "outline-variant": "#c5c5d3",
+            "tertiary-container": "#5c3800",
+            "surface-container-high": "#e2e7ff",
+            "on-tertiary": "#ffffff",
+            "surface": "#faf8ff",
+            "tertiary-fixed-dim": "#ffb95f",
+            "tertiary-fixed": "#ffddb8",
+            "on-secondary-fixed-variant": "#004b73",
+            "primary-container": "#1e3a8a",
+            "surface-variant": "#dae2fd",
+            "error": "#ba1a1a",
+            "slate-surface": "#F8FAFC",
+            "inverse-primary": "#b6c4ff",
+            "surface-border": "#E2E8F0",
+            "surface-container": "#eaedff",
+            "on-surface": "#131b2e",
+            "on-primary-container": "#90a8ff",
+            "amber-subtle": "#FEF3C7",
+            "secondary-container": "#5bb8fe",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed-variant": "#653e00",
+            "on-surface-variant": "#444651",
+            "on-secondary-fixed": "#001d31",
+            "inverse-surface": "#283044",
+            "surface-tint": "#4059aa",
+            "secondary-fixed": "#cce5ff",
+            "secondary-fixed-dim": "#93ccff",
+            "surface-container-low": "#f2f3ff",
+            "on-secondary-container": "#00476e",
+            "brand-navy-surface": "#1E293B",
+            "outline": "#757682",
+            "on-primary-fixed": "#00164e",
+            "on-error-container": "#93000a",
+            "on-primary": "#ffffff",
+            "tertiary": "#3e2400",
+            "on-background": "#131b2e",
+            "background": "#faf8ff",
+            "critical-red": "#EF4444",
+            "primary-fixed": "#dce1ff",
+            "surface-bright": "#faf8ff",
+            "on-secondary": "#ffffff",
+            "brand-navy-dark": "#0F172A",
+            "on-primary-fixed-variant": "#264191",
+            "primary": "#00236f",
+            "surface-border-strong": "#CBD5E1",
+            "on-tertiary-fixed": "#2a1700",
+            "error-container": "#ffdad6",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-highest": "#dae2fd",
+            "secondary": "#006398",
+            "primary-fixed-dim": "#b6c4ff",
+            "critical-surface": "#FEE2E2",
+            "on-tertiary-container": "#ef9900",
+            "surface-dim": "#d2d9f4"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "space-2xl": "4rem",
+            "space-md": "1rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "2.5rem",
+            "margin-mobile": "1rem",
+            "space-xs": "0.25rem",
+            "space-3xl": "6rem",
+            "gutter": "1.5rem",
+            "space-lg": "1.5rem",
+            "margin": "1.5rem"
+          },
+          "fontFamily": {
+            "display-hero-mobile": ["Plus Jakarta Sans"],
+            "body-sm": ["Inter"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Inter"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "label-caps": ["Plus Jakarta Sans"],
+            "body-lg": ["Inter"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "display-hero": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "display-hero-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "800" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .dropzone-active {
+      border-color: #2563EB !important;
+      background-color: #f2f3ff !important;
+    }
+    .dropzone-error-state {
+      border-color: #EF4444 !important;
+      background-color: #FEE2E2 !important;
+    }
+    .input-error-state {
+      border-color: #EF4444 !important;
+      box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15) !important;
+    }
+  </style>
+</head>
+<body class="bg-slate-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col selection:bg-surface-variant selection:text-primary">
+<!-- TOP APP BAR / NAVBAR -->
+<header class="sticky top-0 z-50 h-[72px] bg-surface-container-lowest/95 backdrop-blur-md shadow-sm border-b border-surface-border">
+<div class="max-w-[1240px] mx-auto px-6 flex items-center justify-between h-full">
+<!-- Brand Logo -->
+<a class="flex items-center gap-3 no-underline group" href="index.html">
+<div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-surface-bright shadow-sm group-hover:scale-105 transition-transform duration-150">
+<span class="material-symbols-outlined text-[24px]">directions_car</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold tracking-tight text-brand-navy-dark leading-tight">AUTOSCUOLA <span class="text-electric-blue">DS</span></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Centro Didattico Certificato</span>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden lg:flex items-center gap-6"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1" href="index.html">Home</a>
+<div class="relative group">
+  <a class="font-label-lg text-label-lg text-on-surface-variant group-hover:text-brand-navy-dark transition-colors pb-1 inline-flex items-center gap-1 cursor-pointer" href="corsi.html">
+    <span class="">Corsi</span>
+    <span class="material-symbols-outlined text-[18px] transition-transform group-hover:rotate-180">expand_more</span>
+  </a>
+  <div class="absolute left-0 top-full pt-2 hidden group-hover:block z-50 min-w-[200px]">
+    <div class="bg-surface-container-lowest rounded-xl border border-surface-border p-2 shadow-lg flex flex-col gap-1">
+      <a class="px-3 py-2 rounded-lg font-label-md text-label-md text-brand-navy-dark hover:bg-slate-surface transition-colors no-underline block" href="corsi.html">Tutti i Corsi</a>
+      <a class="px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-brand-navy-dark hover:bg-slate-surface transition-colors no-underline block" href="patenti-superiori.html">Patenti Superiori</a>
+      <a class="px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-brand-navy-dark hover:bg-slate-surface transition-colors no-underline block" href="cqc.html">CQC Merci e Persone</a>
+      <a class="px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-brand-navy-dark hover:bg-slate-surface transition-colors no-underline block" href="recupero-punti.html">Recupero Punti</a>
+    </div>
+  </div>
+</div>
+<a class="font-label-lg text-label-lg text-brand-navy-dark font-semibold border-b-2 border-electric-blue pb-1" href="documenti.html">Rinnovo</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1" href="blog.html">Blog</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1" href="contatti.html">Contatti</a></nav>
+<!-- Trailing Action Buttons -->
+<div class="hidden sm:flex items-center gap-3">
+
+<a class="h-[44px] px-5 rounded-lg bg-primary-container hover:bg-brand-navy-dark text-on-primary font-label-md text-label-md font-semibold shadow-sm flex items-center gap-2 active:scale-[0.98] transition-all duration-150 no-underline" href="contatti.html#form-sezione">
+<span class="material-symbols-outlined text-[18px] text-amber-highlight">assignment_turned_in</span>
+<span class="">Iscriviti Online</span>
+</a>
+</div>
+<!-- Mobile Hamburger Toggle -->
+<button aria-label="Apri menu" class="lg:hidden p-2 text-brand-navy-dark hover:bg-slate-surface rounded-lg transition-colors" onclick="document.getElementById('mobileMenuContainer').classList.toggle('hidden')" type="button">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+<!-- Mobile Dropdown -->
+<div class="hidden lg:hidden bg-surface-container-lowest border-b border-surface-border px-6 py-4 flex-col gap-3 shadow-lg" id="mobileMenuContainer">
+<div class="flex flex-col gap-2"><a class="font-label-lg text-label-lg text-on-surface-variant py-2" href="index.html">Home</a>
+<div class="flex flex-col py-1">
+  <a class="font-label-lg text-label-lg text-on-surface-variant py-1 flex items-center justify-between" href="corsi.html">
+    <span class="">Corsi</span>
+  </a>
+  <div class="pl-4 flex flex-col gap-1 border-l border-surface-border ml-2 my-1">
+    <a class="font-body-sm text-body-sm text-on-surface-variant py-1" href="patenti-superiori.html">Patenti Superiori</a>
+    <a class="font-body-sm text-body-sm text-on-surface-variant py-1" href="cqc.html">CQC Merci e Persone</a>
+    <a class="font-body-sm text-body-sm text-on-surface-variant py-1" href="recupero-punti.html">Recupero Punti</a>
+  </div>
+</div>
+<a class="font-label-lg text-label-lg text-electric-blue font-bold py-2" href="documenti.html">Rinnovo (Attivo)</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant py-2" href="blog.html">Blog</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant py-2" href="contatti.html">Contatti</a></div>
+<div class="pt-3 border-t border-surface-border flex flex-col gap-2"><a class="font-label-lg text-label-lg text-on-surface-variant py-2" href="index.html">Home</a>
+<div class="flex flex-col py-1">
+  <a class="font-label-lg text-label-lg text-on-surface-variant py-1 flex items-center justify-between" href="corsi.html">
+    <span class="">Corsi</span>
+  </a>
+  <div class="pl-4 flex flex-col gap-1 border-l border-surface-border ml-2 my-1">
+    <a class="font-body-sm text-body-sm text-on-surface-variant py-1" href="patenti-superiori.html">Patenti Superiori</a>
+    <a class="font-body-sm text-body-sm text-on-surface-variant py-1" href="cqc.html">CQC Merci e Persone</a>
+    <a class="font-body-sm text-body-sm text-on-surface-variant py-1" href="recupero-punti.html">Recupero Punti</a>
+  </div>
+</div>
+<a class="font-label-lg text-label-lg text-electric-blue font-bold py-2" href="documenti.html">Rinnovo (Attivo)</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant py-2" href="blog.html">Blog</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant py-2" href="contatti.html">Contatti</a></div>
+</div>
+</header>
+<!-- MAIN CANVAS -->
+<main class="flex-grow max-w-[1240px] w-full mx-auto px-4 sm:px-6 py-8 sm:py-12">
+<!-- PAGE HERO HEADER -->
+<div class="mb-10 text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-subtle text-tertiary-container border border-amber-highlight/30 mb-4 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-amber-highlight" style="font-variation-settings: &quot;FILL&quot; 1;">verified</span>
+<span class="font-label-caps text-label-caps font-bold tracking-wider uppercase">PRATICHE ONLINE • PROCEDURA GUIDATA</span>
+</div>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-brand-navy-dark tracking-tight">
+            Caricamento per rinnovo patente</h1>
+
+</div>
+<!-- Quick Help Badge -->
+<div class="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-low border border-surface-border text-on-surface-variant flex-shrink-0 self-start md:self-auto">
+<span class="material-symbols-outlined text-electric-blue text-[20px]">support_agent</span>
+<span class="font-label-md text-label-md font-medium">Assistenza attiva: <strong class="text-brand-navy-dark">06 7960806</strong></span>
+</div>
+</div>
+</div>
+<!-- MAIN INTERACTIVE FORM & BENTO GRID -->
+<form class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start" id="documentUploadForm" novalidate="">
+<!-- LEFT COLUMN: TECH SPECS, ANAGRAPHIC DATA, PRIVACY & PROGRESS (5 Columns) -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<!-- 1. Technical Requirements Card -->
+<div class="bg-surface-container-lowest rounded-xl border border-surface-border p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
+<div class="flex items-center gap-2.5 pb-4 border-b border-slate-surface">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-electric-blue">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-brand-navy-dark font-bold">Requisiti Tecnici dei File</h2>
+</div>
+<ul class="mt-4 space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-success-green text-[18px] mt-0.5" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="">Formato ammesso: <strong class="text-brand-navy-dark font-semibold">JPEG / JPG</strong> (altri formati non conformi al portale).</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-success-green text-[18px] mt-0.5" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="">Dimensione file: <strong class="text-brand-navy-dark font-semibold">massimo 5MB</strong> per ciascun allegato.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-success-green text-[18px] mt-0.5" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="">Fototessera: <strong class="text-brand-navy-dark font-semibold">sfondo neutro chiaro</strong>, a fuoco, sguardo frontale.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-success-green text-[18px] mt-0.5" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="">Firma digitale: <strong class="text-brand-navy-dark font-semibold">tratto scuro e nitido</strong> su foglio bianco non a quadretti.</span>
+</li>
+</ul>
+</div>
+<!-- 2. Student Anagraphic Data Card -->
+<div class="bg-surface-container-lowest rounded-xl border border-surface-border p-6 shadow-sm">
+<div class="flex items-center justify-between pb-4 border-b border-slate-surface mb-4">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-electric-blue">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-brand-navy-dark font-bold">Dati anagrafici</h2>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-slate-surface px-2.5 py-1 rounded border border-surface-border">Campi Obbligatori</span>
+</div>
+<div class="space-y-4">
+<!-- Row: Nome & Cognome -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark font-semibold mb-1.5" for="inputNome">Nome *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">person</span>
+<input class="w-full pl-9 pr-3 h-[46px] rounded-lg border border-surface-border-strong bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:border-electric-blue focus:ring-2 focus:ring-electric-blue/20 transition-all outline-none" id="inputNome" name="nome" placeholder="Mario" required="" type="text">
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark font-semibold mb-1.5" for="inputCognome">Cognome *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">person</span>
+<input class="w-full pl-9 pr-3 h-[46px] rounded-lg border border-surface-border-strong bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:border-electric-blue focus:ring-2 focus:ring-electric-blue/20 transition-all outline-none" id="inputCognome" name="cognome" placeholder="Rossi" required="" type="text">
+</div>
+</div>
+</div>
+<!-- Codice Fiscale -->
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark font-semibold mb-1.5" for="inputCodiceFiscale">Codice Fiscale *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">credit_card</span>
+<input class="w-full pl-9 pr-3 h-[46px] rounded-lg border border-surface-border-strong bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:border-electric-blue focus:ring-2 focus:ring-electric-blue/20 transition-all outline-none uppercase" id="inputCodiceFiscale" maxlength="16" name="codice_fiscale" placeholder="RSSMRA85M01H501Z" required="" type="text">
+</div>
+</div>
+<!-- Telefono -->
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark font-semibold mb-1.5" for="inputTelefono">Telefono Mobile *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">phone_iphone</span>
+<input class="w-full pl-9 pr-3 h-[46px] rounded-lg border border-surface-border-strong bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:border-electric-blue focus:ring-2 focus:ring-electric-blue/20 transition-all outline-none" id="inputTelefono" name="telefono" placeholder="+39 340 1234567" required="" type="tel">
+</div>
+</div>
+<!-- Residenza / Indirizzo -->
+<div>
+<label class="block font-label-md text-label-md text-brand-navy-dark font-semibold mb-1.5" for="inputResidenza">Residenza / Indirizzo Completo *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">location_on</span>
+<input class="w-full pl-9 pr-3 h-[46px] rounded-lg border border-surface-border-strong bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:border-electric-blue focus:ring-2 focus:ring-electric-blue/20 transition-all outline-none" id="inputResidenza" name="residenza" placeholder="Via dei Laghi 42, 00043 Ciampino (RM)" required="" type="text">
+</div>
+</div>
+<!-- Privacy Policy Checkbox -->
+<div class="pt-3 border-t border-slate-surface">
+<label class="flex items-start gap-3 cursor-pointer group">
+<input class="mt-1 w-[18px] h-[18px] rounded border border-surface-border-strong text-primary-container focus:ring-electric-blue/30 focus:ring-2" id="checkboxPrivacy" name="privacy" required="" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Dichiaro di aver preso visione dell'informativa sul trattamento dati e accetto la 
+                  <a class="text-electric-blue font-semibold hover:underline" href="privacy.html">Privacy Policy</a> ai sensi del Regolamento UE 2016/679 (GDPR) per l'inoltro delle pratiche di abilitazione alla guida.
+                </span>
+</label>
+</div>
+</div>
+</div>
+<!-- 3. Visual Progress / Practice Status Card -->
+<div class="bg-surface-container-lowest rounded-xl border border-surface-border p-6 shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-electric-blue text-[20px]">assignment_turned_in</span>
+<span class="font-label-md text-label-md font-bold text-brand-navy-dark uppercase">Stato Avanzamento Pratica</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-electric-blue" id="progressPercentageText">33%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">
+            Carica entrambi i documenti conformi per validare l'invio al sistema ministeriale.
+          </p>
+<div class="w-full bg-slate-surface rounded-full h-2.5 overflow-hidden border border-surface-border">
+<div class="bg-electric-blue h-full rounded-full transition-all duration-300 ease-out" id="progressBarFill" style="width: 33%;"></div>
+</div>
+<div class="flex items-center justify-between mt-3 font-label-caps text-label-caps text-outline">
+<span class="">Dati Personali (1/3)</span>
+<span class="">Upload Firma (2/3)</span>
+<span class="">Fototessera (3/3)</span>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: INTERACTIVE DRAG & DROP UPLOAD AREAS & SECURITY CARD (7 Columns) -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<!-- Upload Bento Grid (2 Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Upload Box 1: Firma Digitale -->
+<div class="bg-surface-container-lowest rounded-xl border border-surface-border p-6 flex flex-col shadow-sm hover:border-surface-border-strong transition-all duration-200">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-electric-blue flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">draw</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark font-bold leading-tight">Firma Digitale</h3>
+
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+              Firma su foglio bianco e scatta una foto nitida con luce uniforme, senza ombre o pieghe del foglio.
+            </p>
+<!-- Drop Zone Container -->
+<div class="flex-grow min-h-[220px] rounded-lg border-2 border-dashed border-surface-border-strong bg-slate-surface flex flex-col items-center justify-center p-5 text-center cursor-pointer hover:bg-surface-container-low transition-colors duration-150 group" id="dropZoneFirma" onclick="document.getElementById('inputFirma').click()">
+<!-- Placeholder State -->
+<div class="flex flex-col items-center" id="placeholderFirma">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest border border-surface-border flex items-center justify-center text-electric-blue mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">cloud_upload</span>
+</div>
+<p class="font-label-md text-label-md font-bold text-brand-navy-dark mb-1">Trascina qui il file della firma</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">oppure sfoglia dal tuo dispositivo</p>
+<button class="h-9 px-4 rounded-md bg-surface-container-lowest border border-surface-border-strong text-brand-navy-dark font-label-md text-label-md font-semibold hover:bg-slate-surface shadow-sm transition-all" onclick="event.stopPropagation(); document.getElementById('inputFirma').click()" type="button">
+                  Seleziona JPEG
+                </button>
+</div>
+<!-- Preview State (Hidden by default) -->
+<div class="hidden w-full flex flex-col items-center" id="previewFirma">
+<div class="relative w-full max-h-36 bg-surface-container-lowest border border-surface-border rounded-lg p-2 flex items-center justify-center overflow-hidden">
+<img class="max-h-32 object-contain rounded" data-alt="A clean, high-contrast, black and white photographed cursive handwritten signature on a smooth white sheet of paper, perfectly framed and sharp under soft daylight illumination in a modern administrative setting." id="imgFirma" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCojHO2-Rq5uU_smd-NdMZwTHCyxHHe-c24CNZjd211Ke8A-XhPe_ldB2mXkzS6vTUoVv9pnbwc63HC64kuqBiCIBE0NLeJ6os-TcxrRBnYUh7GscsH6dEa1QatZjHuMP81X6RFU5e_hkKAha51S07BrFazs7doWv6JcZfErQT-1X43wyWCDwvC1BpsilhoHjNP80sChX6Fft322OEyjHiWOFkZ2g0Fn2dlfcirhbFbGO0yiJqIvQNpcA">
+<button class="absolute top-2 right-2 w-7 h-7 bg-brand-navy-dark text-surface-bright rounded-full flex items-center justify-center hover:bg-critical-red transition-colors shadow" onclick="removeFile(event, 'Firma')" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<div class="mt-3 flex items-center gap-2 text-success-green font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="truncate max-w-[200px]" id="nameFirma">file_caricato.jpg</span>
+</div>
+</div>
+<!-- Hidden Native Input -->
+<input accept="image/jpeg,image/jpg" class="hidden" id="inputFirma" name="file_firma" onchange="handleFileSelected(this, 'Firma')" type="file">
+</div>
+<div class="mt-3 flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps">
+<span class="">Risoluzione raccomandata: 600x600px</span>
+<span class="">JPG max 5MB</span>
+</div>
+</div>
+<!-- Upload Box 2: Fototessera -->
+<div class="bg-surface-container-lowest rounded-xl border border-surface-border p-6 flex flex-col shadow-sm hover:border-surface-border-strong transition-all duration-200">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-electric-blue flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">account_box</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark font-bold leading-tight">Patente&nbsp;</h3>
+
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+              Foto o Scan della patente&nbsp;</p>
+<!-- Drop Zone Container -->
+<div class="flex-grow min-h-[220px] rounded-lg border-2 border-dashed border-surface-border-strong bg-slate-surface flex flex-col items-center justify-center p-5 text-center cursor-pointer hover:bg-surface-container-low transition-colors duration-150 group" id="dropZoneFoto" onclick="document.getElementById('inputFoto').click()">
+<!-- Placeholder State -->
+<div class="flex flex-col items-center" id="placeholderFoto">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest border border-surface-border flex items-center justify-center text-electric-blue mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">portrait</span>
+</div>
+<p class="font-label-md text-label-md font-bold text-brand-navy-dark mb-1">Trascina qui la patente</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">oppure sfoglia dal tuo dispositivo</p>
+<button class="h-9 px-4 rounded-md bg-surface-container-lowest border border-surface-border-strong text-brand-navy-dark font-label-md text-label-md font-semibold hover:bg-slate-surface shadow-sm transition-all" onclick="event.stopPropagation(); document.getElementById('inputFoto').click()" type="button">
+                  Seleziona JPEG
+                </button>
+</div>
+<!-- Preview State (Hidden by default) -->
+<div class="hidden w-full flex flex-col items-center" id="previewFoto">
+<div class="relative w-full max-h-36 bg-surface-container-lowest border border-surface-border rounded-lg p-2 flex items-center justify-center overflow-hidden">
+<img class="max-h-32 object-contain rounded" data-alt="A compliant formal ID biometric passport photo of a professional young adult candidate facing forward against a smooth light-neutral studio background, crystal clear focus, high dynamic range automotive school style." id="imgFoto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3RoDSDCKOq-4VRvTm8Wu0jflf-B-7BbxhU-dnQ8ERcUo64Nij1cicR9IlWl2E4T8Adc01i0mDYwpg4Z1iNSidPJXt9PsDnbtrfa-36l20oSqFe6yuqbfQDynHjRS6z3OURnfIuI16h90TmotB-dc0IAI_xfDM2XuCcEl9PFfA_eFfOcppwTQgS1iqGspgG52neqtKxP9CNZImdXiqSo1-qVlNWBYiBkPYXwMvMU-4B63JO67rEjeloQ">
+<button class="absolute top-2 right-2 w-7 h-7 bg-brand-navy-dark text-surface-bright rounded-full flex items-center justify-center hover:bg-critical-red transition-colors shadow" onclick="removeFile(event, 'Foto')" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<div class="mt-3 flex items-center gap-2 text-success-green font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="truncate max-w-[200px]" id="nameFoto">fototessera.jpg</span>
+</div>
+</div>
+<!-- Hidden Native Input -->
+<input accept="image/jpeg,image/jpg" class="hidden" id="inputFoto" name="file_fototessera" onchange="handleFileSelected(this, 'Foto')" type="file">
+</div>
+<div class="mt-3 flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps">
+<span class="">Sfondo bianco obbligatorio</span>
+<span class="">JPG max 5MB</span>
+</div>
+</div>
+</div>
+<!-- Reassuring Security & GDPR Compliance Card -->
+<div class="bg-surface-container-lowest rounded-xl border border-surface-border p-5 shadow-sm flex flex-col sm:flex-row items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-electric-blue flex-shrink-0">
+<span class="material-symbols-outlined text-[26px]">lock</span>
+</div>
+<div class="flex-grow text-center sm:text-left">
+<div class="flex items-center justify-center sm:justify-start gap-2">
+<h4 class="font-headline-sm text-headline-sm text-brand-navy-dark font-bold">Crittografia TLS 256-bit &amp; Protezione GDPR</h4>
+<span class="hidden sm:inline-block px-2 py-0.5 rounded text-[11px] font-bold uppercase bg-surface-container text-electric-blue">Ufficiale</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              I file caricati sono protetti secondo i più elevati standard europei di sicurezza digitale e trasmessi in via esclusiva al Portale dell'Automobilista per il rilascio della patente.
+            </p>
+</div>
+</div>
+<!-- Success Receipt Panel (Hidden Initially) -->
+<div class="hidden bg-surface-container-lowest rounded-xl border-2 border-success-green p-6 shadow-md transition-all" id="receiptContainer">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-success-green/10 text-success-green flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: &quot;FILL&quot; 1;">task_alt</span>
+</div>
+<div class="flex-grow">
+<span class="font-label-caps text-label-caps text-success-green uppercase font-bold tracking-wider">Documenti Acquisiti con Successo</span>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy-dark font-bold mt-1">Pratica Iscrizione Presa in Carico</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Abbiamo generato la ricevuta digitale della tua richiesta. La segreteria di Autoscuola DS convaliderà i file entro 24 ore lavorative.
+              </p>
+<div class="mt-4 p-3 rounded-lg bg-slate-surface border border-surface-border flex flex-wrap items-center justify-between gap-3">
+<div>
+<span class="block font-label-caps text-label-caps text-outline">CODICE IDENTIFICATIVO PRATICA</span>
+<span class="font-headline-sm text-headline-sm font-bold text-electric-blue tracking-wider" id="displayReceiptCode">DS-2025-94821A</span>
+</div>
+<button class="h-9 px-3.5 rounded-md border border-surface-border-strong bg-surface-container-lowest font-label-md text-label-md text-brand-navy-dark flex items-center gap-1.5 hover:bg-slate-surface" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span class="">Stampa Ricevuta</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Submission Trigger Bar -->
+<div class="mt-2 flex flex-col sm:flex-row items-center justify-between gap-4 p-5 rounded-xl bg-brand-navy-dark text-surface-bright shadow-md">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-amber-highlight text-[28px]">verified_user</span>
+<div>
+<p class="font-label-md text-label-md font-bold text-surface-bright">Pronto per la trasmissione?</p>
+<p class="font-body-sm text-body-sm text-outline-variant">Verifica di aver compilato tutti i campi obbligatori.</p>
+</div>
+</div>
+<button class="w-full sm:w-auto h-[48px] px-8 rounded-lg bg-electric-blue hover:bg-primary-container text-surface-bright font-label-lg text-label-lg font-bold shadow-md flex items-center justify-center gap-2 active:scale-[0.98] transition-all duration-150" id="btnSubmitForm" type="submit">
+<span class="">Invia Documenti e Pratica</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</form>
+</main>
+<!-- FOOTER -->
+<footer class="mt-16 bg-brand-navy-dark text-outline-variant border-t border-brand-navy-surface">
+<div class="max-w-[1240px] mx-auto px-6 py-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-brand-navy-surface">
+<!-- Col 1: Brand Info -->
+<div class="md:col-span-1">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-8 h-8 rounded bg-primary-container flex items-center justify-center text-surface-bright font-bold">DS</div>
+<span class="font-headline-md text-headline-md font-bold text-surface-bright">AUTOSCUOLA DS</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline-variant mb-4 leading-relaxed">
+            Centro di istruzione automobilistica di Aldo Di Stadio. Dal 1980 leader nella formazione alla guida e patenti professionali superiori.
+          </p>
+<div class="flex items-center gap-2 text-surface-bright font-label-md text-label-md">
+<span class="material-symbols-outlined text-electric-blue text-[20px]">location_on</span>
+<span class="">Via dei Laghi, Ciampino (RM)</span>
+</div>
+</div>
+<!-- Col 2: Didattica e Patenti -->
+<div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-surface-bright mb-4">Didattica &amp; Corsi</h4>
+<ul class="space-y-2.5 font-body-sm text-body-sm">
+<li class=""><a class="hover:text-amber-highlight transition-colors duration-150" href="patente-b.html">Patente A &amp; B</a></li>
+<li class=""><a class="hover:text-amber-highlight transition-colors duration-150" href="patenti-superiori.html">Patenti Superiori C/D/E</a></li>
+<li class=""><a class="hover:text-amber-highlight transition-colors duration-150" href="cqc.html">CQC Merci e Persone</a></li>
+<li class=""><a class="hover:text-amber-highlight transition-colors duration-150" href="recupero-punti.html">Recupero Punti</a></li>
+<li class=""><a class="hover:text-amber-highlight transition-colors duration-150" href="documenti.html">Rinnovo Patente</a></li>
+</ul>
+</div>
+<!-- Col 3: Istituzionale & Supporto -->
+<div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-surface-bright mb-4">Servizi Online</h4>
+<ul class="space-y-2.5 font-body-sm text-body-sm">
+<li class=""><a class="text-amber-highlight font-medium" href="documenti.html">Caricamento Documenti</a></li>
+<li class=""><a class="hover:text-amber-highlight transition-colors duration-150" href="contatti.html">Prenotazione Guide Online</a></li>
+<li class=""><a class="hover:text-amber-highlight transition-colors duration-150" href="documenti.html">Portale Ministeriale Quiz</a></li>
+<li class=""><a class="hover:text-amber-highlight transition-colors duration-150" href="privacy.html">Privacy Policy</a></li>
+<li class=""><a class="hover:text-amber-highlight transition-colors duration-150" href="privacy.html">Cookie Policy</a></li>
+<li class=""><a class="hover:text-amber-highlight transition-colors duration-150" href="mappa-sito.html">Mappa del Sito</a></li>
+</ul>
+</div>
+<!-- Col 4: Orari e Contatti Rapidi -->
+<div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-surface-bright mb-4">Orari Segreteria</h4>
+<div class="space-y-2 font-body-sm text-body-sm text-outline-variant">
+<p class=""><strong class="text-surface-bright">Lun - Ven:</strong> 09:00 - 13:00 / 15:30 - 19:30</p>
+<p class=""><strong class="text-surface-bright">Sabato:</strong> 09:00 - 12:30 (su appuntamento)</p>
+<p class="pt-2 text-surface-bright font-label-md text-label-md flex items-center gap-2">
+<span class="material-symbols-outlined text-amber-highlight text-[18px]">call</span>
+<span class="">+39 06 7912345</span>
+</p>
+<p class="text-surface-bright font-label-md text-label-md flex items-center gap-2">
+<span class="material-symbols-outlined text-amber-highlight text-[18px]">mail</span>
+<span class="">info@autoscuolads.it</span>
+</p>
+</div>
+</div>
+</div>
+<!-- Copyright row -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-outline-variant">
+<p class="">© 2025 Autoscuola DS di Aldo Di Stadio - P.IVA 01234567890 - Tutti i diritti riservati</p>
+<p class="text-xs opacity-75">Sito web certificato conforme alle linee guida di sicurezza MIT e GDPR.</p>
+</div>
+</div>
+</footer>
+<!-- SCRIPT FOR CLIENT-SIDE VALIDATION, FILE HANDLING, AND PROGRESS INDICATOR -->
+<script>
+    function updateProgressStatus() {
+      const nome = document.getElementById('inputNome').value.trim() !== '';
+      const cognome = document.getElementById('inputCognome').value.trim() !== '';
+      const cf = document.getElementById('inputCodiceFiscale').value.trim() !== '';
+      const telefono = document.getElementById('inputTelefono').value.trim() !== '';
+      const residenza = document.getElementById('inputResidenza').value.trim() !== '';
+      const privacy = document.getElementById('checkboxPrivacy').checked;
+
+      const hasAnagrafica = nome && cognome && cf && telefono && residenza && privacy;
+      const hasFirma = document.getElementById('inputFirma').files.length > 0;
+      const hasFoto = document.getElementById('inputFoto').files.length > 0;
+
+      let score = 0;
+      if (hasAnagrafica) score += 34; else if (nome || cognome || cf) score += 15;
+      if (hasFirma) score += 33;
+      if (hasFoto) score += 33;
+
+      if (score > 100) score = 100;
+      if (hasAnagrafica && hasFirma && hasFoto) score = 100;
+
+      const bar = document.getElementById('progressBarFill');
+      const text = document.getElementById('progressPercentageText');
+
+      bar.style.width = score + '%';
+      text.textContent = score + '%';
+
+      if (score === 100) {
+        bar.classList.remove('bg-electric-blue');
+        bar.classList.add('bg-success-green');
+        text.classList.remove('text-electric-blue');
+        text.classList.add('text-success-green');
+      } else {
+        bar.classList.add('bg-electric-blue');
+        bar.classList.remove('bg-success-green');
+        text.classList.add('text-electric-blue');
+        text.classList.remove('text-success-green');
+      }
+    }
+
+    // Input listeners to automatically recalculate progress
+    ['inputNome', 'inputCognome', 'inputCodiceFiscale', 'inputTelefono', 'inputResidenza'].forEach(id => {
+      document.getElementById(id).addEventListener('input', updateProgressStatus);
+    });
+    document.getElementById('checkboxPrivacy').addEventListener('change', updateProgressStatus);
+
+    function handleFileSelected(inputElement, type) {
+      const file = inputElement.files[0];
+      if (!file) return;
+
+      // Validate JPEG
+      if (!file.type.match('image/jpeg.*') && !file.name.toLowerCase().endsWith('.jpg') && !file.name.toLowerCase().endsWith('.jpeg')) {
+        alert('Attenzione: il sistema accetta unicamente file in formato JPEG (.jpg/.jpeg).');
+        inputElement.value = '';
+        return;
+      }
+
+      // Validate Max 5MB
+      if (file.size > 5 * 1024 * 1024) {
+        alert('Il file selezionato supera la dimensione massima consentita di 5MB.');
+        inputElement.value = '';
+        return;
+      }
+
+      const previewDiv = document.getElementById('preview' + type);
+      const placeholderDiv = document.getElementById('placeholder' + type);
+      const imgElem = document.getElementById('img' + type);
+      const nameElem = document.getElementById('name' + type);
+      const dropZone = document.getElementById('dropZone' + type);
+
+      dropZone.classList.remove('dropzone-error-state');
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        imgElem.src = e.target.result;
+        nameElem.textContent = file.name + ' (' + (file.size / (1024 * 1024)).toFixed(2) + ' MB)';
+        placeholderDiv.classList.add('hidden');
+        previewDiv.classList.remove('hidden');
+        updateProgressStatus();
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function removeFile(event, type) {
+      if (event) event.stopPropagation();
+      const input = document.getElementById('input' + type);
+      const previewDiv = document.getElementById('preview' + type);
+      const placeholderDiv = document.getElementById('placeholder' + type);
+
+      input.value = '';
+      previewDiv.classList.add('hidden');
+      placeholderDiv.classList.remove('hidden');
+      updateProgressStatus();
+    }
+
+    // Drag and drop listeners
+    ['dropZoneFirma', 'dropZoneFoto'].forEach(zoneId => {
+      const zone = document.getElementById(zoneId);
+      const type = zoneId === 'dropZoneFirma' ? 'Firma' : 'Foto';
+      const inputId = 'input' + type;
+
+      ['dragenter', 'dragover'].forEach(eventName => {
+        zone.addEventListener(eventName, (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          zone.classList.add('dropzone-active');
+        }, false);
+      });
+
+      ['dragleave', 'drop'].forEach(eventName => {
+        zone.addEventListener(eventName, (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          zone.classList.remove('dropzone-active');
+        }, false);
+      });
+
+      zone.addEventListener('drop', (e) => {
+        const dt = e.dataTransfer;
+        const files = dt.files;
+        if (files && files.length > 0) {
+          const input = document.getElementById(inputId);
+          input.files = files;
+          handleFileSelected(input, type);
+        }
+      }, false);
+    });
+
+    // Form Submission Handling
+    document.getElementById('documentUploadForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Reset previous error classes
+      const allInputs = this.querySelectorAll('input');
+      allInputs.forEach(i => i.classList.remove('input-error-state'));
+      document.getElementById('dropZoneFirma').classList.remove('dropzone-error-state');
+      document.getElementById('dropZoneFoto').classList.remove('dropzone-error-state');
+
+      let isValid = true;
+      let missingFields = [];
+
+      const requiredFields = [
+        { id: 'inputNome', label: 'Nome' },
+        { id: 'inputCognome', label: 'Cognome' },
+        { id: 'inputCodiceFiscale', label: 'Codice Fiscale' },
+        { id: 'inputTelefono', label: 'Telefono' },
+        { id: 'inputResidenza', label: 'Residenza / Indirizzo' }
+      ];
+
+      requiredFields.forEach(field => {
+        const input = document.getElementById(field.id);
+        if (!input.value.trim()) {
+          input.classList.add('input-error-state');
+          missingFields.push(field.label);
+          isValid = false;
+        }
+      });
+
+      const privacy = document.getElementById('checkboxPrivacy');
+      if (!privacy.checked) {
+        missingFields.push('Consenso Privacy Policy');
+        isValid = false;
+      }
+
+      const fileFirma = document.getElementById('inputFirma').files.length > 0;
+      const fileFoto = document.getElementById('inputFoto').files.length > 0;
+
+      if (!fileFirma) {
+        document.getElementById('dropZoneFirma').classList.add('dropzone-error-state');
+        missingFields.push('Firma Digitale (JPEG)');
+        isValid = false;
+      }
+
+      if (!fileFoto) {
+        document.getElementById('dropZoneFoto').classList.add('dropzone-error-state');
+        missingFields.push('Fototessera ICAO (JPEG)');
+        isValid = false;
+      }
+
+      if (!isValid) {
+        alert('Attenzione: Completa i seguenti elementi obbligatori prima di inviare:\n\n• ' + missingFields.join('\n• '));
+        return;
+      }
+
+      // Simulate Successful Submission
+      const btn = document.getElementById('btnSubmitForm');
+      const originalHTML = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = `<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span> Invio in corso...`;
+
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.innerHTML = originalHTML;
+
+        // Generate Random Receipt ID
+        const randomId = 'DS-' + new Date().getFullYear() + '-' + Math.floor(10000 + Math.random() * 90000) + 'X';
+        document.getElementById('displayReceiptCode').textContent = randomId;
+
+        const receiptPanel = document.getElementById('receiptContainer');
+        receiptPanel.classList.remove('hidden');
+        receiptPanel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+        // Update progress bar to 100%
+        document.getElementById('progressBarFill').style.width = '100%';
+        document.getElementById('progressPercentageText').textContent = '100%';
+        document.getElementById('progressBarFill').classList.add('bg-success-green');
+        document.getElementById('progressPercentageText').classList.add('text-success-green');
+
+      }, 1000);
+    });
+  </script>
+
+
+
+
+</body></html>
