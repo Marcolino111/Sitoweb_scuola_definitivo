@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-
-<html class="light" lang="it"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html class="light" lang="it"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>CQC Professionale Merci e Persone | Autoscuola DS - Aldo Di Stadio Ciampino</title>
 <!-- Google Fonts: Plus Jakarta Sans & Inter -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
 <!-- Material Symbols Outlined -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <!-- Tailwind CSS with Forms & Container Queries -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
@@ -132,42 +130,91 @@
 </head>
 <body class="bg-slate-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col selection:bg-primary-fixed-dim selection:text-brand-navy-dark">
 <!-- TOP APP BAR / NAVIGATION (From Shared Components JSON) -->
-<header class="docked full-width top-0 z-50 h-[72px] sticky bg-surface-container-lowest/95 dark:bg-brand-navy-dark/95 backdrop-blur-md border-b border-surface-border dark:border-brand-navy-surface shadow-sm">
-<div class="max-w-[1240px] mx-auto px-6 flex items-center justify-between h-full">
-<!-- Brand Logo -->
-<a class="flex items-center gap-3 group" href="#">
-<div class="w-10 h-10 rounded-lg bg-primary-container text-surface-container-lowest flex items-center justify-center font-headline-md font-bold shadow-sm group-hover:scale-105 transition-transform">
-          DS
+<!-- TOP UTILITY BAR (Home Page / Screen 11 Style) -->
+<div class="bg-brand-navy-dark text-slate-300 text-xs py-2 px-6 border-b border-brand-navy-surface">
+  <div class="max-w-[1240px] mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+    <div class="flex items-center gap-2">
+      <span class="w-2 h-2 rounded-full bg-success-green inline-block"></span>
+      <span class="font-semibold text-slate-200 uppercase tracking-wider text-[11px]">Centro Formativo Abilitato M.I.T. • Sede di Ciampino (RM)</span>
+    </div>
+    <div class="hidden sm:flex items-center gap-6 text-[12px]">
+      <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-slate-400">schedule</span> Lun - Ven: 09:00 - 13:00 / 15:30 - 19:30</span>
+      <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-slate-400">location_on</span> Via Palermo 2/D, Ciampino</span>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN STICKY NAVIGATION BAR -->
+<header class="docked full-width top-0 z-50 h-[72px] sticky bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-border shadow-sm">
+  <div class="max-w-[1240px] mx-auto px-6 flex items-center justify-between h-full">
+    <!-- Brand Logo Matching Screen 11 -->
+    <a class="flex items-center gap-3 group" href="#">
+      <div class="w-10 h-10 rounded-lg bg-primary-container text-surface-container-lowest flex items-center justify-center font-headline-md font-bold shadow-sm group-hover:scale-105 transition-transform">
+        DS
+      </div>
+      <div>
+        <span class="font-headline-md text-headline-md font-bold tracking-tight text-brand-navy-dark flex items-center gap-1.5">
+          AUTOSCUOLA <span class="text-electric-blue">DS</span>
+        </span>
+        <span class="block text-[10px] tracking-widest text-outline uppercase font-semibold">DAL 1980 • AUTOSCUOLA &amp; AGENZIA</span>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation Items -->
+    <nav class="hidden md:flex items-center space-x-7">
+      <a class="text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1 font-label-lg text-label-lg" href="#">Home</a>
+      
+      <!-- Corsi Dropdown -->
+      <div class="relative group py-4">
+        <button class="flex items-center gap-1 text-brand-navy-dark font-semibold pb-1 font-label-lg text-label-lg border-b-2 border-electric-blue outline-none transition-colors">
+          <span class="">Corsi</span>
+          <span class="material-symbols-outlined text-[18px] text-electric-blue transition-transform group-hover:rotate-180">expand_more</span>
+        </button>
+        <div class="absolute left-0 top-full hidden group-hover:block w-64 bg-surface-container-lowest rounded-xl border border-surface-border shadow-xl p-2 z-50 animate-in fade-in">
+          <a class="flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-sm text-brand-navy-dark hover:bg-slate-surface transition-colors" href="#">
+            <span class="material-symbols-outlined text-[18px] text-electric-blue">directions_car</span>
+            <div>
+              <p class="font-semibold leading-tight">Patente B e Moto</p>
+              <p class="text-[11px] text-outline">Patenti A, A1, A2, B</p>
+            </div>
+          </a>
+          <a class="flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-sm text-brand-navy-dark hover:bg-slate-surface transition-colors" href="#patenti">
+            <span class="material-symbols-outlined text-[18px] text-electric-blue">local_shipping</span>
+            <div>
+              <p class="font-semibold leading-tight">Patenti Superiori</p>
+              <p class="text-[11px] text-outline">Categorie C, C1, D, CE, DE</p>
+            </div>
+          </a>
+          <a class="flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-sm bg-blue-50 text-electric-blue font-semibold transition-colors" href="#cqc-percorsi">
+            <span class="material-symbols-outlined text-[18px] text-electric-blue">badge</span>
+            <div>
+              <p class="font-semibold leading-tight text-brand-navy-dark">CQC Professionale</p>
+              <p class="text-[11px] text-electric-blue">Merci, Persone &amp; Rinnovo 35h</p>
+            </div>
+          </a>
+          <a class="flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-sm text-brand-navy-dark hover:bg-slate-surface transition-colors" href="#recupero-punti">
+            <span class="material-symbols-outlined text-[18px] text-amber-highlight">restart_alt</span>
+            <div>
+              <p class="font-semibold leading-tight">Recupero Punti</p>
+              <p class="text-[11px] text-outline">Corsi 12 e 18 ore</p>
+            </div>
+          </a>
         </div>
-<div>
-<span class="font-headline-md text-headline-md font-bold tracking-tight text-brand-navy-dark dark:text-surface-bright flex items-center gap-1.5">
-            AUTOSCUOLA <span class="text-electric-blue">DS</span>
-</span>
-<span class="block text-[10px] tracking-widest text-outline uppercase font-semibold">Aldo Di Stadio • Ciampino</span>
-</div>
-</a>
-<!-- Desktop Nav Items -->
-<nav class="hidden md:flex items-center space-x-7">
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-brand-navy-dark dark:hover:text-surface-bright transition-colors pb-1 font-label-lg text-label-lg" href="#corsi">Corsi</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-brand-navy-dark dark:hover:text-surface-bright transition-colors pb-1 font-label-lg text-label-lg" href="#patenti">Patenti Superiori</a>
-<!-- ACTIVE STATE: CQC Professionale -->
-<a class="text-brand-navy-dark dark:text-surface-bright font-semibold border-b-2 border-electric-blue pb-1 font-label-lg text-label-lg" href="#cqc-percorsi">CQC Professionale</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-brand-navy-dark dark:hover:text-surface-bright transition-colors pb-1 font-label-lg text-label-lg" href="#recupero-punti">Recupero Punti</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-brand-navy-dark dark:hover:text-surface-bright transition-colors pb-1 font-label-lg text-label-lg" href="#blog">Blog</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-brand-navy-dark dark:hover:text-surface-bright transition-colors pb-1 font-label-lg text-label-lg" href="#contatti">Contatti</a>
-</nav>
-<!-- Trailing Action Cluster -->
-<div class="flex items-center space-x-3">
-<a class="hidden sm:flex items-center gap-1.5 px-3 py-2 rounded-lg border border-surface-border-strong text-brand-navy-dark font-label-md text-label-md hover:bg-slate-surface active:scale-[0.98] transition-all" href="tel:067912345">
-<span class="material-symbols-outlined text-[18px] text-electric-blue">call</span>
-<span>Chiama Ora</span>
-</a>
-<a class="px-5 py-2.5 rounded-lg bg-primary-container hover:bg-brand-navy-dark text-on-primary font-label-md text-label-md shadow-sm active:scale-[0.98] transition-all flex items-center gap-2" href="#prenotazione">
-<span>Iscriviti Online</span>
-<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</a>
-</div>
-</div>
+      </div>
+
+      <a class="text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1 font-label-lg text-label-lg" href="#rinnovo">Rinnovo</a>
+      <a class="text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1 font-label-lg text-label-lg" href="#blog">Blog</a>
+      <a class="text-on-surface-variant hover:text-brand-navy-dark transition-colors pb-1 font-label-lg text-label-lg" href="#contatti">Contatti</a>
+    </nav>
+
+    <!-- Trailing Action Button -->
+    <div class="flex items-center">
+      <a class="px-5 py-2.5 rounded-lg bg-primary-container hover:bg-brand-navy-dark text-on-primary font-label-md text-label-md shadow-sm active:scale-[0.98] transition-all flex items-center gap-2" href="#prenotazione">
+        <span class="">Iscriviti Online</span>
+        <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+      </a>
+    </div>
+  </div>
 </header>
 <!-- MAIN CANVAS -->
 <main class="flex-grow">
@@ -188,7 +235,7 @@
 </div>
 <div class="space-y-3">
 <h1 class="font-display-hero text-display-hero text-brand-navy-dark tracking-tight">
-                CQC Professionale: <br/>
+                CQC Professionale: <br>
 <span class="text-electric-blue">Conseguimento</span> e Rinnovo Periodico
               </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
@@ -199,25 +246,25 @@
 <div class="flex flex-wrap gap-2.5 pt-1">
 <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-amber-subtle text-tertiary-container border border-[#FDE68A] font-label-md text-label-md">
 <span class="material-symbols-outlined text-[18px] text-amber-highlight">alarm_on</span>
-<span>Prossima sessione in partenza a breve</span>
+<span class="">Prossima sessione in partenza a breve</span>
 </div>
 <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-slate-surface text-brand-navy-dark border border-surface-border font-label-md text-label-md">
 <span class="material-symbols-outlined text-[18px] text-success-green">verified</span>
-<span>Registrazione Telematica Presenze</span>
+<span class="">Registrazione Telematica Presenze</span>
 </div>
 <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-slate-surface text-brand-navy-dark border border-surface-border font-label-md text-label-md">
 <span class="material-symbols-outlined text-[18px] text-electric-blue">schedule</span>
-<span>Corsi Serali &amp; Weekend</span>
+<span class="">Corsi Serali &amp; Weekend</span>
 </div>
 </div>
 <!-- Hero Action Buttons -->
 <div class="flex flex-wrap items-center gap-4 pt-2">
 <a class="px-6 py-3.5 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg hover:bg-brand-navy-dark active:scale-[0.98] transition-all flex items-center gap-2 shadow-sm" href="#prenotazione">
-<span>Prenota Posto in Aula</span>
+<span class="">Prenota Posto in Aula</span>
 <span class="material-symbols-outlined text-[20px]">how_to_reg</span>
 </a>
 <a class="px-6 py-3.5 rounded-lg border border-surface-border-strong text-brand-navy-dark font-label-lg text-label-lg hover:bg-slate-surface active:scale-[0.98] transition-all flex items-center gap-2" href="#corsi-dettagli">
-<span>Esplora i 4 Percorsi</span>
+<span class="">Esplora i 4 Percorsi</span>
 <span class="material-symbols-outlined text-[20px]">expand_more</span>
 </a>
 </div>
@@ -241,7 +288,7 @@
 <div class="lg:col-span-5">
 <div class="bg-surface-container-lowest rounded-xl border border-surface-border p-3 shadow-md relative">
 <div class="relative rounded-lg overflow-hidden h-72 w-full bg-brand-navy-dark">
-<img class="w-full h-full object-cover opacity-85" data-alt="Professional modern commercial heavy transport truck and coach driver education facility in Rome Italy, sleek lighting, advanced cockpit cabin, road transport logistics concept in deep navy and cool crisp slate light aesthetics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6yImArd7JOREldaws5GTV5YlBD3l2BSM4gNzAK-5wD4_xnRVij3ffYhOepARvNMYE1_6reB7y2TWSiZ_Sjt_kmV1DQDBTVT9XJqphnXBGdX3J8EEhEv_hZGYdu9J0XwVIa8aJ1UQthENuOs1mqQTZmVMDNpjX1irta0s_i787-UkVwjl5agbx149jt_LifU6HKo1pBf4SxjxJKhKpBOBdvxury_lB6nQFWhmwizvIi4K9Y31kNZm5DA"/>
+<img class="w-full h-full object-cover opacity-85" data-alt="Professional modern commercial heavy transport truck and coach driver education facility in Rome Italy, sleek lighting, advanced cockpit cabin, road transport logistics concept in deep navy and cool crisp slate light aesthetics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6yImArd7JOREldaws5GTV5YlBD3l2BSM4gNzAK-5wD4_xnRVij3ffYhOepARvNMYE1_6reB7y2TWSiZ_Sjt_kmV1DQDBTVT9XJqphnXBGdX3J8EEhEv_hZGYdu9J0XwVIa8aJ1UQthENuOs1mqQTZmVMDNpjX1irta0s_i787-UkVwjl5agbx149jt_LifU6HKo1pBf4SxjxJKhKpBOBdvxury_lB6nQFWhmwizvIi4K9Y31kNZm5DA">
 <div class="absolute inset-0 bg-gradient-to-t from-brand-navy-dark via-transparent to-transparent"></div>
 <div class="absolute bottom-4 left-4 right-4 text-white">
 <div class="flex items-center gap-2 mb-1">
@@ -303,15 +350,15 @@
 <ul class="space-y-2 mb-6 border-t border-slate-100 pt-4">
 <li class="flex items-center gap-2 text-xs text-on-surface">
 <span class="material-symbols-outlined text-success-green text-[16px]">check_circle</span>
-<span>Normativa carico e ancoraggi</span>
+<span class="">Normativa carico e ancoraggi</span>
 </li>
 <li class="flex items-center gap-2 text-xs text-on-surface">
 <span class="material-symbols-outlined text-success-green text-[16px]">check_circle</span>
-<span>Uso cronotachigrafo smart 4.0</span>
+<span class="">Uso cronotachigrafo smart 4.0</span>
 </li>
 <li class="flex items-center gap-2 text-xs text-on-surface">
 <span class="material-symbols-outlined text-success-green text-[16px]">check_circle</span>
-<span>Moduli specifici logistica ADR</span>
+<span class="">Moduli specifici logistica ADR</span>
 </li>
 </ul>
 </div>
@@ -333,15 +380,15 @@
 <ul class="space-y-2 mb-6 border-t border-slate-100 pt-4">
 <li class="flex items-center gap-2 text-xs text-on-surface">
 <span class="material-symbols-outlined text-success-green text-[16px]">check_circle</span>
-<span>Relazione con passeggeri e soccorso</span>
+<span class="">Relazione con passeggeri e soccorso</span>
 </li>
 <li class="flex items-center gap-2 text-xs text-on-surface">
 <span class="material-symbols-outlined text-success-green text-[16px]">check_circle</span>
-<span>Sicurezza scolastica e noleggio NCC</span>
+<span class="">Sicurezza scolastica e noleggio NCC</span>
 </li>
 <li class="flex items-center gap-2 text-xs text-on-surface">
 <span class="material-symbols-outlined text-success-green text-[16px]">check_circle</span>
-<span>Manovre di emergenza ed evacuazione</span>
+<span class="">Manovre di emergenza ed evacuazione</span>
 </li>
 </ul>
 </div>
@@ -363,15 +410,15 @@
 <ul class="space-y-2 mb-6 border-t border-slate-100 pt-4">
 <li class="flex items-center gap-2 text-xs text-on-surface">
 <span class="material-symbols-outlined text-success-green text-[16px]">check_circle</span>
-<span>Esonero parte teorica comune</span>
+<span class="">Esonero parte teorica comune</span>
 </li>
 <li class="flex items-center gap-2 text-xs text-on-surface">
 <span class="material-symbols-outlined text-success-green text-[16px]">check_circle</span>
-<span>Solo 35 ore teoriche + 2.5 pratiche</span>
+<span class="">Solo 35 ore teoriche + 2.5 pratiche</span>
 </li>
 <li class="flex items-center gap-2 text-xs text-on-surface">
 <span class="material-symbols-outlined text-success-green text-[16px]">check_circle</span>
-<span>Esame integrativo dedicato</span>
+<span class="">Esame integrativo dedicato</span>
 </li>
 </ul>
 </div>
@@ -396,15 +443,15 @@
 <ul class="space-y-2 mb-6 border-t border-slate-100 pt-4">
 <li class="flex items-center gap-2 text-xs text-on-surface">
 <span class="material-symbols-outlined text-success-green text-[16px]">check_circle</span>
-<span>5 moduli da 7 ore ciascuno</span>
+<span class="">5 moduli da 7 ore ciascuno</span>
 </li>
 <li class="flex items-center gap-2 text-xs text-on-surface">
 <span class="material-symbols-outlined text-success-green text-[16px]">check_circle</span>
-<span>Orari serali e sabato mattina</span>
+<span class="">Orari serali e sabato mattina</span>
 </li>
 <li class="flex items-center gap-2 text-xs text-on-surface">
 <span class="material-symbols-outlined text-success-green text-[16px]">check_circle</span>
-<span>Rilascio immediato ricevuta valida</span>
+<span class="">Rilascio immediato ricevuta valida</span>
 </li>
 </ul>
 </div>
@@ -466,11 +513,11 @@
 <div class="space-y-2.5 text-sm text-slate-300 border-t border-slate-800 pt-4">
 <div class="flex items-center gap-2">
 <span class="material-symbols-outlined text-success-green text-[18px]">check</span>
-<span>Età minima Merci: 18 anni (con limitazioni massa) o 21 anni piena</span>
+<span class="">Età minima Merci: 18 anni (con limitazioni massa) o 21 anni piena</span>
 </div>
 <div class="flex items-center gap-2">
 <span class="material-symbols-outlined text-success-green text-[18px]">check</span>
-<span>Età minima Persone: 21 anni (fino a 50 km) o 23 anni piena</span>
+<span class="">Età minima Persone: 21 anni (fino a 50 km) o 23 anni piena</span>
 </div>
 </div>
 </div>
@@ -507,11 +554,11 @@
 <div class="space-y-2 text-xs text-on-surface-variant">
 <p class="flex items-start gap-2">
 <span class="material-symbols-outlined text-outline text-[16px] mt-0.5">info</span>
-<span>Consente di guidare autobus senza limite di 50 km già a 21 anni, o autotreni pesanti a 18 anni.</span>
+<span class="">Consente di guidare autobus senza limite di 50 km già a 21 anni, o autotreni pesanti a 18 anni.</span>
 </p>
 <p class="flex items-start gap-2">
 <span class="material-symbols-outlined text-outline text-[16px] mt-0.5">info</span>
-<span>Frequenza prolungata distribuita in più mesi d'aula.</span>
+<span class="">Frequenza prolungata distribuita in più mesi d'aula.</span>
 </p>
 </div>
 </div>
@@ -682,20 +729,20 @@
 <div class="space-y-1.5">
 <label class="block font-label-md text-label-md text-brand-navy-dark">Nome e Cognome *</label>
 <div class="relative">
-<input class="w-full h-[46px] px-3.5 rounded-lg border border-surface-border-strong text-brand-navy-dark font-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100 outline-none transition-all" placeholder="Es. Marco Rossi" required="" type="text"/>
+<input class="w-full h-[46px] px-3.5 rounded-lg border border-surface-border-strong text-brand-navy-dark font-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100 outline-none transition-all" placeholder="Es. Marco Rossi" required="" type="text">
 </div>
 </div>
 <!-- Telefono -->
 <div class="space-y-1.5">
 <label class="block font-label-md text-label-md text-brand-navy-dark">Recapito Telefonico *</label>
-<input class="w-full h-[46px] px-3.5 rounded-lg border border-surface-border-strong text-brand-navy-dark font-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100 outline-none transition-all" placeholder="Es. 340 1234567" required="" type="tel"/>
+<input class="w-full h-[46px] px-3.5 rounded-lg border border-surface-border-strong text-brand-navy-dark font-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100 outline-none transition-all" placeholder="Es. 340 1234567" required="" type="tel">
 </div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <!-- Email -->
 <div class="space-y-1.5">
 <label class="block font-label-md text-label-md text-brand-navy-dark">Email *</label>
-<input class="w-full h-[46px] px-3.5 rounded-lg border border-surface-border-strong text-brand-navy-dark font-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100 outline-none transition-all" placeholder="marco.rossi@example.com" required="" type="email"/>
+<input class="w-full h-[46px] px-3.5 rounded-lg border border-surface-border-strong text-brand-navy-dark font-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100 outline-none transition-all" placeholder="marco.rossi@example.com" required="" type="email">
 </div>
 <!-- Tipologia Corso Desiderato -->
 <div class="space-y-1.5">
@@ -723,7 +770,7 @@
 <!-- Patente posseduta -->
 <div class="space-y-1.5">
 <label class="block font-label-md text-label-md text-brand-navy-dark">Patente Attualmente Posseduta</label>
-<input class="w-full h-[46px] px-3.5 rounded-lg border border-surface-border-strong text-brand-navy-dark font-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100 outline-none transition-all" placeholder="Es. B conseguita nel 2018, oppure C, D..." type="text"/>
+<input class="w-full h-[46px] px-3.5 rounded-lg border border-surface-border-strong text-brand-navy-dark font-body-md focus:border-electric-blue focus:ring-2 focus:ring-blue-100 outline-none transition-all" placeholder="Es. B conseguita nel 2018, oppure C, D..." type="text">
 </div>
 </div>
 <!-- Note / Richiesta Bonus -->
@@ -733,14 +780,14 @@
 </div>
 <!-- Checkbox Privacy -->
 <div class="flex items-start gap-3">
-<input class="mt-1 w-4 h-4 rounded text-primary-container focus:ring-primary-container border-surface-border-strong" id="privacy" required="" type="checkbox"/>
+<input class="mt-1 w-4 h-4 rounded text-primary-container focus:ring-primary-container border-surface-border-strong" id="privacy" required="" type="checkbox">
 <label class="text-xs text-on-surface-variant leading-relaxed" for="privacy">
                 Dichiaro di aver preso visione dell'informativa sul trattamento dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR) e autorizzo il contatto da parte della segreteria didattica di Autoscuola DS.
               </label>
 </div>
 <!-- Submit Button -->
 <button class="w-full h-12 rounded-lg bg-primary-container hover:bg-brand-navy-dark text-on-primary font-bold font-label-lg text-label-lg transition-all flex items-center justify-center gap-2 shadow-md active:scale-[0.98]" type="submit">
-<span>Invia Richiesta di Prenotazione</span>
+<span class="">Invia Richiesta di Prenotazione</span>
 <span class="material-symbols-outlined text-[20px]">send</span>
 </button>
 <!-- Institutional Reassurance -->
@@ -783,15 +830,15 @@
 <div class="space-y-1.5 text-xs text-outline-variant pt-2">
 <p class="flex items-center gap-2">
 <span class="material-symbols-outlined text-[16px] text-electric-blue">location_on</span>
-<span>Via di Ciampino, Roma / Ciampino (RM)</span>
+<span class="">Via di Ciampino, Roma / Ciampino (RM)</span>
 </p>
 <p class="flex items-center gap-2">
 <span class="material-symbols-outlined text-[16px] text-electric-blue">call</span>
-<span>06 791 2345 • 340 0000000</span>
+<span class="">06 791 2345 • 340 0000000</span>
 </p>
 <p class="flex items-center gap-2">
 <span class="material-symbols-outlined text-[16px] text-electric-blue">mail</span>
-<span>info@autoscuolads.it</span>
+<span class="">info@autoscuolads.it</span>
 </p>
 </div>
 </div>
@@ -799,42 +846,44 @@
 <div class="space-y-3">
 <p class="font-headline-sm text-headline-sm font-semibold text-white">Patenti e Corsi</p>
 <ul class="space-y-2 font-body-sm text-body-sm">
-<li><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Patente A &amp; B</a></li>
-<li><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Patenti Superiori C/D/E</a></li>
+<li class=""><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Patente A &amp; B</a></li>
+<li class=""><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Patenti Superiori C/D/E</a></li>
 <!-- Active link in footer style as specified -->
-<li><a class="text-amber-highlight font-medium" href="#">CQC Merci e Persone</a></li>
-<li><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Recupero Punti</a></li>
-<li><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Rinnovo Patente</a></li>
+<li class=""><a class="text-amber-highlight font-medium" href="#">CQC Merci e Persone</a></li>
+<li class=""><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Recupero Punti</a></li>
+<li class=""><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Rinnovo Patente</a></li>
 </ul>
 </div>
 <!-- Links Col 2 -->
 <div class="space-y-3">
 <p class="font-headline-sm text-headline-sm font-semibold text-white">Didattica &amp; Servizi</p>
 <ul class="space-y-2 font-body-sm text-body-sm">
-<li><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Simulatore Cronotachigrafo</a></li>
-<li><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Voucher Bonus Patenti</a></li>
-<li><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Visite Mediche in Sede</a></li>
-<li><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Guida Accompagnata 17 Anni</a></li>
+<li class=""><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Simulatore Cronotachigrafo</a></li>
+<li class=""><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Voucher Bonus Patenti</a></li>
+<li class=""><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Visite Mediche in Sede</a></li>
+<li class=""><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Guida Accompagnata 17 Anni</a></li>
 </ul>
 </div>
 <!-- Links Col 3: Legale -->
 <div class="space-y-3">
 <p class="font-headline-sm text-headline-sm font-semibold text-white">Trasparenza</p>
 <ul class="space-y-2 font-body-sm text-body-sm">
-<li><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Privacy Policy</a></li>
-<li><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Cookie Policy</a></li>
-<li><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Mappa del Sito</a></li>
-<li><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Codice Etico M.I.T.</a></li>
+<li class=""><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Privacy Policy</a></li>
+<li class=""><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Cookie Policy</a></li>
+<li class=""><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Mappa del Sito</a></li>
+<li class=""><a class="text-outline-variant hover:text-amber-highlight transition-colors" href="#">Codice Etico M.I.T.</a></li>
 </ul>
 </div>
 </div>
 <!-- Bottom Copyright Line -->
 <div class="border-t border-brand-navy-surface pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-outline-variant gap-4">
-<p>© 2025 Autoscuola DS di Aldo Di Stadio - P.IVA 01234567890 - Tutti i diritti riservati</p>
+<p class="">© 2025 Autoscuola DS di Aldo Di Stadio - P.IVA 01234567890 - Tutti i diritti riservati</p>
 <p class="flex items-center gap-1">
-<span>Accreditamento Regionale e Ministeriale Cat. A/B/C/D/E/CQC</span>
+<span class="">Accreditamento Regionale e Ministeriale Cat. A/B/C/D/E/CQC</span>
 </p>
 </div>
 </div>
 </footer>
+
+
 </body></html>
